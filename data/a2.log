@@ -1,0 +1,269 @@
+2025-04-17T11:41:09.822+0000 I CONTROL  [initandlisten] MongoDB starting : pid=7152 port=20001 dbpath=./data/a2 64-bit host=codespaces-c69bba
+2025-04-17T11:41:09.822+0000 I CONTROL  [initandlisten] db version v3.6.8
+2025-04-17T11:41:09.822+0000 I CONTROL  [initandlisten] git version: 8e540c0b6db93ce994cc548f000900bdc740f80a
+2025-04-17T11:41:09.822+0000 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.1.1f  31 Mar 2020
+2025-04-17T11:41:09.822+0000 I CONTROL  [initandlisten] allocator: tcmalloc
+2025-04-17T11:41:09.822+0000 I CONTROL  [initandlisten] modules: none
+2025-04-17T11:41:09.822+0000 I CONTROL  [initandlisten] build environment:
+2025-04-17T11:41:09.822+0000 I CONTROL  [initandlisten]     distarch: x86_64
+2025-04-17T11:41:09.822+0000 I CONTROL  [initandlisten]     target_arch: x86_64
+2025-04-17T11:41:09.822+0000 I CONTROL  [initandlisten] options: { net: { port: 20001 }, replication: { replSet: "shard-a" }, sharding: { clusterRole: "shardsvr" }, storage: { dbPath: "./data/a2", journal: { enabled: false } }, systemLog: { destination: "file", path: "./data/a2.log" } }
+2025-04-17T11:41:09.823+0000 I STORAGE  [initandlisten] 
+2025-04-17T11:41:09.823+0000 I STORAGE  [initandlisten] ** WARNING: Using the XFS filesystem is strongly recommended with the WiredTiger storage engine
+2025-04-17T11:41:09.823+0000 I STORAGE  [initandlisten] **          See http://dochub.mongodb.org/core/prodnotes-filesystem
+2025-04-17T11:41:09.823+0000 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=3456M,session_max=20000,eviction=(threads_min=4,threads_max=4),config_base=false,statistics=(fast),cache_cursors=false,compatibility=(release="3.0",require_max="3.0"),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),statistics_log=(wait=0),verbose=(recovery_progress),,log=(enabled=false),
+2025-04-17T11:41:10.403+0000 I STORAGE  [initandlisten] WiredTiger message [1744890070:403762][7152:0x7bc71a33eac0], txn-recover: Set global recovery timestamp: 0
+2025-04-17T11:41:10.426+0000 I CONTROL  [initandlisten] 
+2025-04-17T11:41:10.426+0000 I CONTROL  [initandlisten] ** WARNING: Access control is not enabled for the database.
+2025-04-17T11:41:10.426+0000 I CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted.
+2025-04-17T11:41:10.426+0000 I CONTROL  [initandlisten] 
+2025-04-17T11:41:10.426+0000 I CONTROL  [initandlisten] ** WARNING: This server is bound to localhost.
+2025-04-17T11:41:10.426+0000 I CONTROL  [initandlisten] **          Remote systems will be unable to connect to this server. 
+2025-04-17T11:41:10.426+0000 I CONTROL  [initandlisten] **          Start the server with --bind_ip <address> to specify which IP 
+2025-04-17T11:41:10.426+0000 I CONTROL  [initandlisten] **          addresses it should serve responses from, or with --bind_ip_all to
+2025-04-17T11:41:10.426+0000 I CONTROL  [initandlisten] **          bind to all interfaces. If this behavior is desired, start the
+2025-04-17T11:41:10.426+0000 I CONTROL  [initandlisten] **          server with --bind_ip 127.0.0.1 to disable this warning.
+2025-04-17T11:41:10.426+0000 I CONTROL  [initandlisten] 
+2025-04-17T11:41:10.426+0000 I CONTROL  [initandlisten] 
+2025-04-17T11:41:10.426+0000 I CONTROL  [initandlisten] ** WARNING: /sys/kernel/mm/transparent_hugepage/enabled is 'always'.
+2025-04-17T11:41:10.426+0000 I CONTROL  [initandlisten] **        We suggest setting it to 'never'
+2025-04-17T11:41:10.427+0000 I CONTROL  [initandlisten] 
+2025-04-17T11:41:10.427+0000 I CONTROL  [initandlisten] ** WARNING: Running wiredTiger with the --nojournal option in a replica set
+2025-04-17T11:41:10.427+0000 I CONTROL  [initandlisten] **          is deprecated and subject to be removed in a future version.
+2025-04-17T11:41:10.427+0000 I CONTROL  [initandlisten] 
+2025-04-17T11:41:10.429+0000 W SHARDING [initandlisten] Started with --shardsvr, but no shardIdentity document was found on disk in admin.system.version. This most likely means this server has not yet been added to a sharded cluster.
+2025-04-17T11:41:10.429+0000 I STORAGE  [initandlisten] createCollection: local.startup_log with no UUID.
+2025-04-17T11:41:10.439+0000 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory './data/a2/diagnostic.data'
+2025-04-17T11:41:10.439+0000 I STORAGE  [initandlisten] createCollection: local.me with no UUID.
+2025-04-17T11:41:10.450+0000 I STORAGE  [initandlisten] createCollection: local.replset.minvalid with no UUID.
+2025-04-17T11:41:10.460+0000 I REPL     [initandlisten] Did not find local voted for document at startup.
+2025-04-17T11:41:10.460+0000 I REPL     [initandlisten] Did not find local Rollback ID document at startup. Creating one.
+2025-04-17T11:41:10.460+0000 I STORAGE  [initandlisten] createCollection: local.system.rollback.id with no UUID.
+2025-04-17T11:41:10.471+0000 I REPL     [initandlisten] Initialized the rollback ID to 1
+2025-04-17T11:41:10.471+0000 I REPL     [initandlisten] Did not find local replica set configuration document at startup;  NoMatchingDocument: Did not find replica set configuration document in local.system.replset
+2025-04-17T11:41:10.472+0000 I CONTROL  [LogicalSessionCacheReap] Sessions collection is not set up; waiting until next sessions reap interval: sharding state is not yet initialized
+2025-04-17T11:41:10.472+0000 I NETWORK  [initandlisten] waiting for connections on port 20001
+2025-04-17T11:46:10.472+0000 I CONTROL  [LogicalSessionCacheReap] Sessions collection is not set up; waiting until next sessions reap interval: sharding state is not yet initialized
+2025-04-17T11:50:05.687+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:49038 #1 (1 connection now open)
+2025-04-17T11:50:05.688+0000 I NETWORK  [conn1] end connection 127.0.0.1:49038 (0 connections now open)
+2025-04-17T11:50:05.688+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:49046 #2 (1 connection now open)
+2025-04-17T11:50:05.688+0000 I NETWORK  [conn2] received client metadata from 127.0.0.1:49046 conn2: { driver: { name: "NetworkInterfaceASIO-Replication", version: "3.6.8" }, os: { type: "Linux", name: "Ubuntu", architecture: "x86_64", version: "20.04" } }
+2025-04-17T11:50:05.688+0000 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:20000
+2025-04-17T11:50:05.690+0000 I ASIO     [NetworkInterfaceASIO-Replication-0] Successfully connected to localhost:20000, took 2ms (1 connections now open to localhost:20000)
+2025-04-17T11:50:05.691+0000 I STORAGE  [replexec-0] createCollection: local.system.replset with no UUID.
+2025-04-17T11:50:05.707+0000 I REPL     [replexec-0] 
+2025-04-17T11:50:05.707+0000 I REPL     [replexec-0] ** WARNING: This replica set is running without journaling enabled but the 
+2025-04-17T11:50:05.707+0000 I REPL     [replexec-0] **          writeConcernMajorityJournalDefault option to the replica set config 
+2025-04-17T11:50:05.707+0000 I REPL     [replexec-0] **          is set to true. The writeConcernMajorityJournalDefault 
+2025-04-17T11:50:05.707+0000 I REPL     [replexec-0] **          option to the replica set config must be set to false 
+2025-04-17T11:50:05.707+0000 I REPL     [replexec-0] **          or w:majority write concerns will never complete.
+2025-04-17T11:50:05.707+0000 I REPL     [replexec-0] 
+2025-04-17T11:50:05.707+0000 I REPL     [replexec-0] New replica set config in use: { _id: "shard-a", version: 2, protocolVersion: 1, members: [ { _id: 0, host: "localhost:20000", arbiterOnly: false, buildIndexes: true, hidden: false, priority: 1.0, tags: {}, slaveDelay: 0, votes: 1 }, { _id: 1, host: "localhost:20001", arbiterOnly: false, buildIndexes: true, hidden: false, priority: 1.0, tags: {}, slaveDelay: 0, votes: 1 } ], settings: { chainingAllowed: true, heartbeatIntervalMillis: 2000, heartbeatTimeoutSecs: 10, electionTimeoutMillis: 10000, catchUpTimeoutMillis: -1, catchUpTakeoverDelayMillis: 30000, getLastErrorModes: {}, getLastErrorDefaults: { w: 1, wtimeout: 0 }, replicaSetId: ObjectId('6800eac517ce6756068cf04c') } }
+2025-04-17T11:50:05.707+0000 I REPL     [replexec-0] This node is localhost:20001 in the config
+2025-04-17T11:50:05.707+0000 I REPL     [replexec-0] transition to STARTUP2 from STARTUP
+2025-04-17T11:50:05.707+0000 I REPL     [replexec-0] Starting replication storage threads
+2025-04-17T11:50:05.707+0000 I REPL     [replexec-1] Member localhost:20000 is now in state PRIMARY
+2025-04-17T11:50:05.716+0000 I STORAGE  [replexec-0] createCollection: local.temp_oplog_buffer with no UUID.
+2025-04-17T11:50:05.728+0000 I REPL     [replication-0] Starting initial sync (attempt 1 of 10)
+2025-04-17T11:50:05.728+0000 I STORAGE  [replication-0] Finishing collection drop for local.temp_oplog_buffer (no UUID).
+2025-04-17T11:50:05.735+0000 I STORAGE  [replication-0] createCollection: local.temp_oplog_buffer with no UUID.
+2025-04-17T11:50:05.747+0000 I REPL     [replication-0] sync source candidate: localhost:20000
+2025-04-17T11:50:05.747+0000 I REPL     [replication-0] ******
+2025-04-17T11:50:05.747+0000 I REPL     [replication-0] creating replication oplog of size: 990MB...
+2025-04-17T11:50:05.747+0000 I STORAGE  [replication-0] createCollection: local.oplog.rs with no UUID.
+2025-04-17T11:50:05.753+0000 I STORAGE  [replication-0] Starting WiredTigerRecordStoreThread local.oplog.rs
+2025-04-17T11:50:05.753+0000 I STORAGE  [replication-0] The size storer reports that the oplog contains 0 records totaling to 0 bytes
+2025-04-17T11:50:05.753+0000 I STORAGE  [replication-0] Scanning the oplog to determine where to place markers for truncation
+2025-04-17T11:50:05.758+0000 I REPL     [replication-0] ******
+2025-04-17T11:50:05.758+0000 I STORAGE  [replication-0] dropAllDatabasesExceptLocal 1
+2025-04-17T11:50:05.758+0000 I ASIO     [NetworkInterfaceASIO-RS-0] Connecting to localhost:20000
+2025-04-17T11:50:05.759+0000 I ASIO     [NetworkInterfaceASIO-RS-0] Successfully connected to localhost:20000, took 1ms (1 connections now open to localhost:20000)
+2025-04-17T11:50:05.760+0000 I ASIO     [NetworkInterfaceASIO-RS-0] Connecting to localhost:20000
+2025-04-17T11:50:05.760+0000 I ASIO     [NetworkInterfaceASIO-RS-0] Successfully connected to localhost:20000, took 0ms (2 connections now open to localhost:20000)
+2025-04-17T11:50:05.761+0000 I REPL     [replication-0] CollectionCloner::start called, on ns:admin.system.version
+2025-04-17T11:50:05.762+0000 I STORAGE  [repl writer worker 1] createCollection: admin.system.version with no UUID.
+2025-04-17T11:50:05.773+0000 I INDEX    [repl writer worker 1] build index on: admin.system.version properties: { v: 2, key: { _id: 1 }, name: "_id_", ns: "admin.system.version" }
+2025-04-17T11:50:05.773+0000 I INDEX    [repl writer worker 1] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2025-04-17T11:50:05.773+0000 I REPL     [repl writer worker 15] CollectionCloner ns:admin.system.version finished cloning with status: OK
+2025-04-17T11:50:05.775+0000 I REPL     [replication-0] CollectionCloner::start called, on ns:config.transactions
+2025-04-17T11:50:05.776+0000 I STORAGE  [repl writer worker 6] createCollection: config.transactions with no UUID.
+2025-04-17T11:50:05.785+0000 I INDEX    [repl writer worker 6] build index on: config.transactions properties: { v: 2, key: { _id: 1 }, name: "_id_", ns: "config.transactions" }
+2025-04-17T11:50:05.785+0000 I INDEX    [repl writer worker 6] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2025-04-17T11:50:05.785+0000 W REPL     [repl writer worker 4] _insertDocumentsCallback, but no documents to insert for ns:config.transactions
+2025-04-17T11:50:05.785+0000 I REPL     [repl writer worker 4] CollectionCloner ns:config.transactions finished cloning with status: OK
+2025-04-17T11:50:05.785+0000 I REPL     [repl writer worker 4] Finished cloning data: OK. Beginning oplog replay.
+2025-04-17T11:50:05.786+0000 I REPL     [replication-1] No need to apply operations. (currently at { : Timestamp(1744890605, 1) })
+2025-04-17T11:50:05.786+0000 I ASIO     [NetworkInterfaceASIO-RS-0] Ending connection to host localhost:20000 due to bad connection status; 1 connections to that host remain open
+2025-04-17T11:50:05.787+0000 I REPL     [replication-1] Finished fetching oplog during initial sync: CallbackCanceled: error in fetcher batch callback: oplog fetcher is shutting down. Last fetched optime and hash: { ts: Timestamp(0, 0), t: -1 }[0]
+2025-04-17T11:50:05.787+0000 I REPL     [replication-1] Initial sync attempt finishing up.
+2025-04-17T11:50:05.787+0000 I REPL     [replication-1] Initial Sync Attempt Statistics: { failedInitialSyncAttempts: 0, maxFailedInitialSyncAttempts: 10, initialSyncStart: new Date(1744890605728), initialSyncAttempts: [], fetchedMissingDocs: 0, appliedOps: 0, initialSyncOplogStart: Timestamp(1744890605, 1), initialSyncOplogEnd: Timestamp(1744890605, 1), databases: { databasesCloned: 2, admin: { collections: 1, clonedCollections: 1, start: new Date(1744890605760), end: new Date(1744890605775), elapsedMillis: 15, admin.system.version: { documentsToCopy: 1, documentsCopied: 1, indexes: 1, fetchedBatches: 1, start: new Date(1744890605761), end: new Date(1744890605775), elapsedMillis: 14 } }, config: { collections: 1, clonedCollections: 1, start: new Date(1744890605775), end: new Date(1744890605785), elapsedMillis: 10, config.transactions: { documentsToCopy: 0, documentsCopied: 0, indexes: 1, fetchedBatches: 0, start: new Date(1744890605775), end: new Date(1744890605785), elapsedMillis: 10 } } } }
+2025-04-17T11:50:05.787+0000 I STORAGE  [replication-1] Finishing collection drop for local.temp_oplog_buffer (no UUID).
+2025-04-17T11:50:05.799+0000 I REPL     [replication-1] initial sync done; took 0s.
+2025-04-17T11:50:05.799+0000 I REPL     [replication-1] transition to RECOVERING from STARTUP2
+2025-04-17T11:50:05.799+0000 I REPL     [replication-1] Starting replication fetcher thread
+2025-04-17T11:50:05.799+0000 I REPL     [replication-1] Starting replication applier thread
+2025-04-17T11:50:05.799+0000 I REPL     [replication-1] Starting replication reporter thread
+2025-04-17T11:50:05.801+0000 I REPL     [rsBackgroundSync] could not find member to sync from
+2025-04-17T11:50:05.801+0000 I REPL     [rsSync] transition to SECONDARY from RECOVERING
+2025-04-17T11:50:05.801+0000 I REPL     [rsSync] Resetting sync source to empty, which was :27017
+2025-04-17T11:50:16.347+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:37666 #3 (2 connections now open)
+2025-04-17T11:50:16.347+0000 I NETWORK  [conn3] end connection 127.0.0.1:37666 (1 connection now open)
+2025-04-17T11:50:16.352+0000 I REPL     [replexec-0] New replica set config in use: { _id: "shard-a", version: 3, protocolVersion: 1, members: [ { _id: 0, host: "localhost:20000", arbiterOnly: false, buildIndexes: true, hidden: false, priority: 1.0, tags: {}, slaveDelay: 0, votes: 1 }, { _id: 1, host: "localhost:20001", arbiterOnly: false, buildIndexes: true, hidden: false, priority: 1.0, tags: {}, slaveDelay: 0, votes: 1 }, { _id: 2, host: "localhost:20002", arbiterOnly: false, buildIndexes: true, hidden: false, priority: 1.0, tags: {}, slaveDelay: 0, votes: 1 } ], settings: { chainingAllowed: true, heartbeatIntervalMillis: 2000, heartbeatTimeoutSecs: 10, electionTimeoutMillis: 10000, catchUpTimeoutMillis: -1, catchUpTakeoverDelayMillis: 30000, getLastErrorModes: {}, getLastErrorDefaults: { w: 1, wtimeout: 0 }, replicaSetId: ObjectId('6800eac517ce6756068cf04c') } }
+2025-04-17T11:50:16.352+0000 I REPL     [replexec-0] This node is localhost:20001 in the config
+2025-04-17T11:50:16.353+0000 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:20002
+2025-04-17T11:50:16.353+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:37678 #4 (2 connections now open)
+2025-04-17T11:50:16.353+0000 I NETWORK  [conn4] end connection 127.0.0.1:37678 (1 connection now open)
+2025-04-17T11:50:16.354+0000 I ASIO     [NetworkInterfaceASIO-Replication-0] Successfully connected to localhost:20002, took 1ms (1 connections now open to localhost:20002)
+2025-04-17T11:50:16.354+0000 I REPL     [replexec-7] Member localhost:20002 is now in state STARTUP
+2025-04-17T11:50:16.355+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:37686 #5 (2 connections now open)
+2025-04-17T11:50:16.355+0000 I NETWORK  [conn5] received client metadata from 127.0.0.1:37686 conn5: { driver: { name: "NetworkInterfaceASIO-Replication", version: "3.6.8" }, os: { type: "Linux", name: "Ubuntu", architecture: "x86_64", version: "20.04" } }
+2025-04-17T11:50:16.420+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:37692 #6 (3 connections now open)
+2025-04-17T11:50:16.420+0000 I NETWORK  [conn6] received client metadata from 127.0.0.1:37692 conn6: { driver: { name: "NetworkInterfaceASIO-RS", version: "3.6.8" }, os: { type: "Linux", name: "Ubuntu", architecture: "x86_64", version: "20.04" } }
+2025-04-17T11:50:16.422+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:37704 #7 (4 connections now open)
+2025-04-17T11:50:16.422+0000 I NETWORK  [conn7] received client metadata from 127.0.0.1:37704 conn7: { driver: { name: "NetworkInterfaceASIO-RS", version: "3.6.8" }, os: { type: "Linux", name: "Ubuntu", architecture: "x86_64", version: "20.04" } }
+2025-04-17T11:50:16.803+0000 I REPL     [rsBackgroundSync] sync source candidate: localhost:20000
+2025-04-17T11:50:16.804+0000 I REPL     [rsBackgroundSync] Changed sync source from empty to localhost:20000
+2025-04-17T11:50:16.804+0000 I ASIO     [NetworkInterfaceASIO-RS-0] Connecting to localhost:20000
+2025-04-17T11:50:16.805+0000 I STORAGE  [rsSync] createCollection: local.replset.oplogTruncateAfterPoint with no UUID.
+2025-04-17T11:50:16.805+0000 I ASIO     [NetworkInterfaceASIO-RS-0] Successfully connected to localhost:20000, took 1ms (2 connections now open to localhost:20000)
+2025-04-17T11:50:16.819+0000 I NETWORK  [conn6] end connection 127.0.0.1:37692 (3 connections now open)
+2025-04-17T11:50:16.854+0000 I REPL     [replexec-5] Member localhost:20002 is now in state SECONDARY
+2025-04-17T11:50:37.960+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:59478 #8 (4 connections now open)
+2025-04-17T11:50:37.960+0000 I NETWORK  [conn8] end connection 127.0.0.1:59478 (3 connections now open)
+2025-04-17T11:50:37.970+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:59486 #9 (4 connections now open)
+2025-04-17T11:50:37.970+0000 I REPL     [replexec-6] New replica set config in use: { _id: "shard-a", version: 4, protocolVersion: 1, members: [ { _id: 0, host: "localhost:20000", arbiterOnly: false, buildIndexes: true, hidden: false, priority: 1.0, tags: {}, slaveDelay: 0, votes: 1 }, { _id: 1, host: "localhost:20001", arbiterOnly: false, buildIndexes: true, hidden: false, priority: 1.0, tags: {}, slaveDelay: 0, votes: 1 }, { _id: 2, host: "localhost:20002", arbiterOnly: false, buildIndexes: true, hidden: false, priority: 1.0, tags: {}, slaveDelay: 0, votes: 1 }, { _id: 3, host: "localhost:20003", arbiterOnly: true, buildIndexes: true, hidden: false, priority: 0.0, tags: {}, slaveDelay: 0, votes: 1 } ], settings: { chainingAllowed: true, heartbeatIntervalMillis: 2000, heartbeatTimeoutSecs: 10, electionTimeoutMillis: 10000, catchUpTimeoutMillis: -1, catchUpTakeoverDelayMillis: 30000, getLastErrorModes: {}, getLastErrorDefaults: { w: 1, wtimeout: 0 }, replicaSetId: ObjectId('6800eac517ce6756068cf04c') } }
+2025-04-17T11:50:37.970+0000 I REPL     [replexec-6] This node is localhost:20001 in the config
+2025-04-17T11:50:37.971+0000 I NETWORK  [conn9] end connection 127.0.0.1:59486 (3 connections now open)
+2025-04-17T11:50:37.971+0000 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:20003
+2025-04-17T11:50:37.973+0000 I ASIO     [NetworkInterfaceASIO-Replication-0] Successfully connected to localhost:20003, took 2ms (1 connections now open to localhost:20003)
+2025-04-17T11:50:37.974+0000 I REPL     [replexec-1] Member localhost:20003 is now in state STARTUP
+2025-04-17T11:50:37.975+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:59502 #10 (4 connections now open)
+2025-04-17T11:50:37.975+0000 I NETWORK  [conn10] received client metadata from 127.0.0.1:59502 conn10: { driver: { name: "NetworkInterfaceASIO-Replication", version: "3.6.8" }, os: { type: "Linux", name: "Ubuntu", architecture: "x86_64", version: "20.04" } }
+2025-04-17T11:50:37.977+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:59518 #11 (5 connections now open)
+2025-04-17T11:50:37.978+0000 I NETWORK  [conn11] end connection 127.0.0.1:59518 (4 connections now open)
+2025-04-17T11:50:39.975+0000 I REPL     [replexec-3] Member localhost:20003 is now in state ARBITER
+2025-04-17T11:51:10.472+0000 I CONTROL  [LogicalSessionCacheReap] Sessions collection is not set up; waiting until next sessions reap interval: sharding state is not yet initialized
+2025-04-17T11:52:42.296+0000 I ASIO     [NetworkInterfaceASIO-RS-0] Connecting to localhost:20000
+2025-04-17T11:52:42.297+0000 I ASIO     [NetworkInterfaceASIO-RS-0] Successfully connected to localhost:20000, took 1ms (3 connections now open to localhost:20000)
+2025-04-17T11:54:27.299+0000 I ASIO     [NetworkInterfaceASIO-RS-0] Ending idle connection to host localhost:20000 because the pool meets constraints; 2 connections to that host remain open
+2025-04-17T11:55:16.445+0000 I NETWORK  [conn7] end connection 127.0.0.1:37704 (3 connections now open)
+2025-04-17T11:56:10.472+0000 I CONTROL  [LogicalSessionCacheReap] Sessions collection is not set up; waiting until next sessions reap interval: sharding state is not yet initialized
+2025-04-17T11:59:12.307+0000 I ASIO     [NetworkInterfaceASIO-RS-0] Connecting to localhost:20000
+2025-04-17T11:59:12.308+0000 I ASIO     [NetworkInterfaceASIO-RS-0] Successfully connected to localhost:20000, took 1ms (3 connections now open to localhost:20000)
+2025-04-17T12:00:12.307+0000 I ASIO     [NetworkInterfaceASIO-RS-0] Ending idle connection to host localhost:20000 because the pool meets constraints; 2 connections to that host remain open
+2025-04-17T12:01:10.472+0000 I CONTROL  [LogicalSessionCacheReap] Sessions collection is not set up; waiting until next sessions reap interval: sharding state is not yet initialized
+2025-04-17T12:03:07.310+0000 I ASIO     [NetworkInterfaceASIO-RS-0] Connecting to localhost:20000
+2025-04-17T12:03:07.311+0000 I ASIO     [NetworkInterfaceASIO-RS-0] Successfully connected to localhost:20000, took 1ms (3 connections now open to localhost:20000)
+2025-04-17T12:04:52.310+0000 I ASIO     [NetworkInterfaceASIO-RS-0] Ending idle connection to host localhost:20000 because the pool meets constraints; 2 connections to that host remain open
+2025-04-17T12:04:53.013+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:42538 #12 (4 connections now open)
+2025-04-17T12:04:53.013+0000 I NETWORK  [conn12] received client metadata from 127.0.0.1:42538 conn12: { driver: { name: "MongoDB Internal Client", version: "3.6.8" }, os: { type: "Linux", name: "Ubuntu", architecture: "x86_64", version: "20.04" } }
+2025-04-17T12:04:57.335+0000 I SHARDING [repl writer worker 3] initializing sharding state with: { _id: "shardIdentity", configsvrConnectionString: "configrs/localhost:30000,localhost:30001,localhost:30002", shardName: "shard-a", clusterId: ObjectId('6800ed744d3aefddab03033a') }
+2025-04-17T12:04:57.335+0000 I SHARDING [repl writer worker 3] first cluster operation detected, adding sharding hook to enable versioning and authentication to remote servers
+2025-04-17T12:04:57.335+0000 I NETWORK  [repl writer worker 3] Starting new replica set monitor for configrs/localhost:30000,localhost:30001,localhost:30002
+2025-04-17T12:04:57.335+0000 I SHARDING [repl writer worker 3] initialized sharding components for secondary node.
+2025-04-17T12:04:57.335+0000 I SHARDING [thread13] creating distributed lock ping thread for process codespaces-c69bba:20001:1744891497:8698860795453092436 (sleeping for 30000ms)
+2025-04-17T12:04:57.339+0000 I NETWORK  [ReplicaSetMonitor-TaskExecutor-0] Successfully connected to localhost:30002 (1 connections now open to localhost:30002 with a 5 second timeout)
+2025-04-17T12:04:57.339+0000 I NETWORK  [shard registry reload] Successfully connected to localhost:30000 (1 connections now open to localhost:30000 with a 5 second timeout)
+2025-04-17T12:04:57.340+0000 I NETWORK  [replSetDistLockPinger] Successfully connected to localhost:30001 (1 connections now open to localhost:30001 with a 5 second timeout)
+2025-04-17T12:04:57.340+0000 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Connecting to localhost:30000
+2025-04-17T12:04:57.341+0000 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Connecting to localhost:30000
+2025-04-17T12:04:57.342+0000 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Successfully connected to localhost:30000, took 2ms (2 connections now open to localhost:30000)
+2025-04-17T12:04:57.343+0000 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Successfully connected to localhost:30000, took 2ms (2 connections now open to localhost:30000)
+2025-04-17T12:04:57.351+0000 W SHARDING [replSetDistLockPinger] pinging failed for distributed lock pinger :: caused by :: LockStateChangeFailed: findAndModify query predicate didn't match any lock document
+2025-04-17T12:05:17.319+0000 I COMMAND  [repl writer worker 7] setting featureCompatibilityVersion to upgrading to 3.6
+2025-04-17T12:05:17.319+0000 I NETWORK  [repl writer worker 7] Skip closing connection for connection # 12
+2025-04-17T12:05:17.319+0000 I NETWORK  [repl writer worker 7] Skip closing connection for connection # 10
+2025-04-17T12:05:17.319+0000 I NETWORK  [repl writer worker 7] Skip closing connection for connection # 5
+2025-04-17T12:05:17.319+0000 I NETWORK  [repl writer worker 7] Skip closing connection for connection # 2
+2025-04-17T12:05:27.343+0000 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Connecting to localhost:30002
+2025-04-17T12:05:27.344+0000 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Successfully connected to localhost:30002, took 1ms (1 connections now open to localhost:30002)
+2025-04-17T12:05:37.325+0000 I COMMAND  [repl writer worker 11] Assigning UUID b9772ed9-4f00-4786-bf50-376bf32cd67a to collection local.system.rollback.id
+2025-04-17T12:05:37.325+0000 I COMMAND  [repl writer worker 11] Assigning UUID 587683a3-2150-4082-b5d3-e702339d9e2b to collection local.system.replset
+2025-04-17T12:05:37.325+0000 I COMMAND  [repl writer worker 11] Assigning UUID 16dde804-95f8-41f1-9d01-d4403dca3ced to collection local.me
+2025-04-17T12:05:37.325+0000 I COMMAND  [repl writer worker 11] Assigning UUID 88eef2ba-45d1-4471-850a-b9cf71b2988b to collection local.startup_log
+2025-04-17T12:05:37.325+0000 I COMMAND  [repl writer worker 11] Assigning UUID 2f3a520c-5a5c-4dd2-9e81-64112191d50b to collection local.replset.minvalid
+2025-04-17T12:05:37.325+0000 I COMMAND  [repl writer worker 11] Assigning UUID 278c53a7-ca9a-4042-adf7-3f4fd31e3a93 to collection local.oplog.rs
+2025-04-17T12:05:37.325+0000 I COMMAND  [repl writer worker 11] Assigning UUID 778fb406-4d7f-4696-88ff-1e6dd66f0eb3 to collection local.replset.oplogTruncateAfterPoint
+2025-04-17T12:05:37.325+0000 I COMMAND  [repl writer worker 11] Assigning UUID dc1a9710-53ce-4ff2-8c30-05235a3165b3 to collection admin.system.version
+2025-04-17T12:05:37.333+0000 I COMMAND  [repl writer worker 13] Assigning UUID c221d024-a058-4848-b1c3-c108c7f6a13d to collection config.transactions
+2025-04-17T12:05:37.350+0000 I COMMAND  [repl writer worker 15] setting featureCompatibilityVersion to 3.6
+2025-04-17T12:05:37.350+0000 I NETWORK  [repl writer worker 15] Skip closing connection for connection # 12
+2025-04-17T12:05:37.350+0000 I NETWORK  [repl writer worker 15] Skip closing connection for connection # 10
+2025-04-17T12:05:37.350+0000 I NETWORK  [repl writer worker 15] Skip closing connection for connection # 5
+2025-04-17T12:05:37.350+0000 I NETWORK  [repl writer worker 15] Skip closing connection for connection # 2
+2025-04-17T12:05:57.337+0000 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Connecting to localhost:30001
+2025-04-17T12:05:57.338+0000 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Successfully connected to localhost:30001, took 1ms (1 connections now open to localhost:30001)
+2025-04-17T12:05:57.344+0000 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Ending idle connection to host localhost:30000 because the pool meets constraints; 1 connections to that host remain open
+2025-04-17T12:06:10.472+0000 I CONTROL  [LogicalSessionCacheReap] Sessions collection is not set up; waiting until next sessions reap interval: Collection config.system.sessions is not sharded.
+2025-04-17T12:06:10.472+0000 I CONTROL  [LogicalSessionCacheRefresh] Sessions collection is not set up; waiting until next sessions refresh interval: Collection config.system.sessions is not sharded.
+2025-04-17T12:06:19.228+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:36066 #13 (5 connections now open)
+2025-04-17T12:06:19.229+0000 I NETWORK  [conn13] received client metadata from 127.0.0.1:36066 conn13: { driver: { name: "MongoDB Internal Client", version: "3.6.8" }, os: { type: "Linux", name: "Ubuntu", architecture: "x86_64", version: "20.04" } }
+2025-04-17T12:06:27.329+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:36072 #14 (6 connections now open)
+2025-04-17T12:06:27.329+0000 I NETWORK  [conn14] received client metadata from 127.0.0.1:36072 conn14: { driver: { name: "MongoDB Internal Client", version: "3.6.8" }, os: { type: "Linux", name: "Ubuntu", architecture: "x86_64", version: "20.04" } }
+2025-04-17T12:06:27.345+0000 I NETWORK  [shard registry reload] Starting new replica set monitor for shard-a/localhost:20000,localhost:20001,localhost:20002
+2025-04-17T12:06:27.345+0000 I NETWORK  [ReplicaSetMonitor-TaskExecutor-0] Successfully connected to localhost:20002 (1 connections now open to localhost:20002 with a 5 second timeout)
+2025-04-17T12:06:27.346+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:36076 #15 (7 connections now open)
+2025-04-17T12:06:27.346+0000 I NETWORK  [ReplicaSetMonitor-TaskExecutor-0] Successfully connected to localhost:20000 (1 connections now open to localhost:20000 with a 5 second timeout)
+2025-04-17T12:06:27.346+0000 I NETWORK  [conn15] received client metadata from 127.0.0.1:36076 conn15: { driver: { name: "MongoDB Internal Client", version: "3.6.8" }, os: { type: "Linux", name: "Ubuntu", architecture: "x86_64", version: "20.04" } }
+2025-04-17T12:06:27.347+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:36078 #16 (8 connections now open)
+2025-04-17T12:06:27.347+0000 I NETWORK  [conn16] received client metadata from 127.0.0.1:36078 conn16: { driver: { name: "MongoDB Internal Client", version: "3.6.8" }, os: { type: "Linux", name: "Ubuntu", architecture: "x86_64", version: "20.04" } }
+2025-04-17T12:06:27.347+0000 I NETWORK  [ReplicaSetMonitor-TaskExecutor-0] Successfully connected to localhost:20001 (1 connections now open to localhost:20001 with a 5 second timeout)
+2025-04-17T12:06:28.431+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:36088 #17 (9 connections now open)
+2025-04-17T12:06:28.431+0000 I NETWORK  [conn17] received client metadata from 127.0.0.1:36088 conn17: { driver: { name: "MongoDB Internal Client", version: "3.6.8" }, os: { type: "Linux", name: "Ubuntu", architecture: "x86_64", version: "20.04" } }
+2025-04-17T12:06:39.043+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:45988 #18 (10 connections now open)
+2025-04-17T12:06:39.043+0000 I NETWORK  [conn18] received client metadata from 127.0.0.1:45988 conn18: { driver: { name: "MongoDB Internal Client", version: "3.6.8" }, os: { type: "Linux", name: "Ubuntu", architecture: "x86_64", version: "20.04" } }
+2025-04-17T12:06:39.066+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:46004 #19 (11 connections now open)
+2025-04-17T12:06:39.066+0000 I NETWORK  [conn19] received client metadata from 127.0.0.1:46004 conn19: { driver: { name: "MongoDB Internal Client", version: "3.6.8" }, os: { type: "Linux", name: "Ubuntu", architecture: "x86_64", version: "20.04" } }
+2025-04-17T12:06:39.066+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:46014 #20 (12 connections now open)
+2025-04-17T12:06:39.067+0000 I NETWORK  [conn20] received client metadata from 127.0.0.1:46014 conn20: { driver: { name: "MongoDB Internal Client", version: "3.6.8" }, os: { type: "Linux", name: "Ubuntu", architecture: "x86_64", version: "20.04" } }
+2025-04-17T12:06:40.691+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:46026 #21 (13 connections now open)
+2025-04-17T12:06:40.691+0000 I NETWORK  [conn21] received client metadata from 127.0.0.1:46026 conn21: { driver: { name: "MongoDB Internal Client", version: "3.6.8" }, os: { type: "Linux", name: "Ubuntu", architecture: "x86_64", version: "20.04" } }
+2025-04-17T12:07:29.064+0000 I STORAGE  [repl writer worker 5] createCollection: config.system.sessions with provided UUID: 78b3b0d0-2d1a-4aac-a08b-eb0d14ac129e
+2025-04-17T12:07:29.230+0000 I STORAGE  [repl writer worker 7] createCollection: config.cache.collections with provided UUID: edaca4f6-ad52-487c-bd6f-f903b53186ea
+2025-04-17T12:07:29.267+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:48642 #22 (14 connections now open)
+2025-04-17T12:07:29.267+0000 I NETWORK  [conn22] received client metadata from 127.0.0.1:48642 conn22: { driver: { name: "NetworkInterfaceASIO-TaskExecutorPool-0", version: "3.6.8" }, os: { type: "Linux", name: "Ubuntu", architecture: "x86_64", version: "20.04" } }
+2025-04-17T12:07:29.283+0000 I STORAGE  [repl writer worker 11] createCollection: config.cache.chunks.config.system.sessions with provided UUID: 35c61049-fb89-4d87-b51a-3dc61019b5ca
+2025-04-17T12:07:29.308+0000 I INDEX    [repl writer worker 13] build index on: config.cache.chunks.config.system.sessions properties: { v: 2, key: { lastmod: 1 }, name: "lastmod_1", ns: "config.cache.chunks.config.system.sessions" }
+2025-04-17T12:07:29.308+0000 I INDEX    [repl writer worker 13] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2025-04-17T12:07:29.310+0000 I INDEX    [repl writer worker 13] build index done.  scanned 0 total records. 0 secs
+2025-04-17T12:07:57.346+0000 I NETWORK  [shard registry reload] Starting new replica set monitor for shard-b/localhost:20100,localhost:20101,localhost:20102
+2025-04-17T12:07:57.347+0000 I NETWORK  [ReplicaSetMonitor-TaskExecutor-0] Successfully connected to localhost:20100 (1 connections now open to localhost:20100 with a 5 second timeout)
+2025-04-17T12:07:57.347+0000 I NETWORK  [ReplicaSetMonitor-TaskExecutor-0] Successfully connected to localhost:20102 (1 connections now open to localhost:20102 with a 5 second timeout)
+2025-04-17T12:07:57.348+0000 I NETWORK  [ReplicaSetMonitor-TaskExecutor-0] Successfully connected to localhost:20101 (1 connections now open to localhost:20101 with a 5 second timeout)
+2025-04-17T12:07:58.468+0000 I INDEX    [repl writer worker 7] build index on: config.system.sessions properties: { v: 2, key: { lastUse: 1 }, name: "lsidTTLIndex", expireAfterSeconds: 1800, ns: "config.system.sessions" }
+2025-04-17T12:07:58.468+0000 I INDEX    [repl writer worker 7] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2025-04-17T12:07:58.469+0000 I INDEX    [repl writer worker 7] build index done.  scanned 1 total records. 0 secs
+2025-04-17T12:10:22.416+0000 I ASIO     [NetworkInterfaceASIO-RS-0] Connecting to localhost:20000
+2025-04-17T12:10:22.417+0000 I ASIO     [NetworkInterfaceASIO-RS-0] Successfully connected to localhost:20000, took 1ms (3 connections now open to localhost:20000)
+2025-04-17T12:11:10.472+0000 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Connecting to localhost:20000
+2025-04-17T12:11:10.472+0000 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Successfully connected to localhost:20000, took 0ms (1 connections now open to localhost:20000)
+2025-04-17T12:11:10.474+0000 I SH_REFR  [ShardServerCatalogCacheLoader-0] Refresh for collection config.system.sessions to version 1|0||6800ef014d3aefddab030af1 took 2 ms
+2025-04-17T12:11:22.417+0000 I ASIO     [NetworkInterfaceASIO-RS-0] Ending idle connection to host localhost:20000 because the pool meets constraints; 2 connections to that host remain open
+2025-04-17T12:11:57.349+0000 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Connecting to localhost:30001
+2025-04-17T12:11:57.350+0000 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Successfully connected to localhost:30001, took 1ms (1 connections now open to localhost:30001)
+2025-04-17T12:12:29.268+0000 I NETWORK  [conn22] end connection 127.0.0.1:48642 (13 connections now open)
+2025-04-17T12:13:02.417+0000 I ASIO     [NetworkInterfaceASIO-RS-0] Connecting to localhost:20000
+2025-04-17T12:13:02.420+0000 I ASIO     [NetworkInterfaceASIO-RS-0] Successfully connected to localhost:20000, took 3ms (3 connections now open to localhost:20000)
+2025-04-17T12:14:32.431+0000 I ASIO     [NetworkInterfaceASIO-RS-0] Ending idle connection to host localhost:20000 because the pool meets constraints; 2 connections to that host remain open
+2025-04-17T12:15:01.335+0000 I STORAGE  [repl writer worker 13] createCollection: config.cache.chunks.kt.mycollect with provided UUID: 4623ff6d-ff9a-453c-8234-6e7a2d96b020
+2025-04-17T12:15:01.355+0000 I STORAGE  [repl writer worker 15] createCollection: kt.mycollect with provided UUID: 57c94af9-df34-44f4-acbd-e041b09a9bd9
+2025-04-17T12:15:01.376+0000 I INDEX    [repl writer worker 1] build index on: config.cache.chunks.kt.mycollect properties: { v: 2, key: { lastmod: 1 }, name: "lastmod_1", ns: "config.cache.chunks.kt.mycollect" }
+2025-04-17T12:15:01.376+0000 I INDEX    [repl writer worker 1] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2025-04-17T12:15:01.377+0000 I INDEX    [repl writer worker 1] build index done.  scanned 0 total records. 0 secs
+2025-04-17T12:15:01.385+0000 I INDEX    [repl writer worker 7] build index on: kt.mycollect properties: { v: 2, key: { _id: "hashed" }, name: "_id_hashed", ns: "kt.mycollect" }
+2025-04-17T12:15:01.385+0000 I INDEX    [repl writer worker 7] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2025-04-17T12:15:01.386+0000 I INDEX    [repl writer worker 7] build index done.  scanned 0 total records. 0 secs
+2025-04-17T12:28:32.439+0000 I ASIO     [NetworkInterfaceASIO-RS-0] Connecting to localhost:20000
+2025-04-17T12:28:32.440+0000 I ASIO     [NetworkInterfaceASIO-RS-0] Successfully connected to localhost:20000, took 1ms (3 connections now open to localhost:20000)
+2025-04-17T12:29:32.439+0000 I ASIO     [NetworkInterfaceASIO-RS-0] Ending idle connection to host localhost:20000 because the pool meets constraints; 2 connections to that host remain open
+2025-04-17T12:31:32.444+0000 I ASIO     [NetworkInterfaceASIO-RS-0] Connecting to localhost:20000
+2025-04-17T12:31:32.445+0000 I ASIO     [NetworkInterfaceASIO-RS-0] Successfully connected to localhost:20000, took 1ms (3 connections now open to localhost:20000)
+2025-04-17T12:32:32.444+0000 I ASIO     [NetworkInterfaceASIO-RS-0] Ending idle connection to host localhost:20000 because the pool meets constraints; 2 connections to that host remain open
+2025-04-17T12:37:12.450+0000 I ASIO     [NetworkInterfaceASIO-RS-0] Connecting to localhost:20000
+2025-04-17T12:37:12.451+0000 I ASIO     [NetworkInterfaceASIO-RS-0] Successfully connected to localhost:20000, took 1ms (3 connections now open to localhost:20000)
+2025-04-17T12:38:12.451+0000 I ASIO     [NetworkInterfaceASIO-RS-0] Ending idle connection to host localhost:20000 because the pool meets constraints; 2 connections to that host remain open
+2025-04-17T12:43:27.387+0000 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Connecting to localhost:30001
+2025-04-17T12:43:27.388+0000 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Successfully connected to localhost:30001, took 1ms (1 connections now open to localhost:30001)
+2025-04-17T12:47:22.463+0000 I ASIO     [NetworkInterfaceASIO-RS-0] Connecting to localhost:20000
+2025-04-17T12:47:22.464+0000 I ASIO     [NetworkInterfaceASIO-RS-0] Successfully connected to localhost:20000, took 1ms (3 connections now open to localhost:20000)
+2025-04-17T12:48:22.463+0000 I ASIO     [NetworkInterfaceASIO-RS-0] Ending idle connection to host localhost:20000 because the pool meets constraints; 2 connections to that host remain open

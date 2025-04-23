@@ -1,0 +1,93 @@
+2025-04-17T11:42:16.438+0000 I CONTROL  [initandlisten] MongoDB starting : pid=8608 port=20003 dbpath=./data/a4 64-bit host=codespaces-c69bba
+2025-04-17T11:42:16.438+0000 I CONTROL  [initandlisten] db version v3.6.8
+2025-04-17T11:42:16.438+0000 I CONTROL  [initandlisten] git version: 8e540c0b6db93ce994cc548f000900bdc740f80a
+2025-04-17T11:42:16.438+0000 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.1.1f  31 Mar 2020
+2025-04-17T11:42:16.438+0000 I CONTROL  [initandlisten] allocator: tcmalloc
+2025-04-17T11:42:16.438+0000 I CONTROL  [initandlisten] modules: none
+2025-04-17T11:42:16.438+0000 I CONTROL  [initandlisten] build environment:
+2025-04-17T11:42:16.438+0000 I CONTROL  [initandlisten]     distarch: x86_64
+2025-04-17T11:42:16.438+0000 I CONTROL  [initandlisten]     target_arch: x86_64
+2025-04-17T11:42:16.438+0000 I CONTROL  [initandlisten] options: { net: { port: 20003 }, replication: { replSet: "shard-a" }, sharding: { clusterRole: "shardsvr" }, storage: { dbPath: "./data/a4", journal: { enabled: false } }, systemLog: { destination: "file", path: "./data/a4.log" } }
+2025-04-17T11:42:16.438+0000 I STORAGE  [initandlisten] 
+2025-04-17T11:42:16.438+0000 I STORAGE  [initandlisten] ** WARNING: Using the XFS filesystem is strongly recommended with the WiredTiger storage engine
+2025-04-17T11:42:16.438+0000 I STORAGE  [initandlisten] **          See http://dochub.mongodb.org/core/prodnotes-filesystem
+2025-04-17T11:42:16.438+0000 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=3456M,session_max=20000,eviction=(threads_min=4,threads_max=4),config_base=false,statistics=(fast),cache_cursors=false,compatibility=(release="3.0",require_max="3.0"),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),statistics_log=(wait=0),verbose=(recovery_progress),,log=(enabled=false),
+2025-04-17T11:42:17.007+0000 I STORAGE  [initandlisten] WiredTiger message [1744890137:7406][8608:0x7a510fc66ac0], txn-recover: Set global recovery timestamp: 0
+2025-04-17T11:42:17.026+0000 I CONTROL  [initandlisten] 
+2025-04-17T11:42:17.026+0000 I CONTROL  [initandlisten] ** WARNING: Access control is not enabled for the database.
+2025-04-17T11:42:17.026+0000 I CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted.
+2025-04-17T11:42:17.026+0000 I CONTROL  [initandlisten] 
+2025-04-17T11:42:17.026+0000 I CONTROL  [initandlisten] ** WARNING: This server is bound to localhost.
+2025-04-17T11:42:17.026+0000 I CONTROL  [initandlisten] **          Remote systems will be unable to connect to this server. 
+2025-04-17T11:42:17.026+0000 I CONTROL  [initandlisten] **          Start the server with --bind_ip <address> to specify which IP 
+2025-04-17T11:42:17.026+0000 I CONTROL  [initandlisten] **          addresses it should serve responses from, or with --bind_ip_all to
+2025-04-17T11:42:17.026+0000 I CONTROL  [initandlisten] **          bind to all interfaces. If this behavior is desired, start the
+2025-04-17T11:42:17.026+0000 I CONTROL  [initandlisten] **          server with --bind_ip 127.0.0.1 to disable this warning.
+2025-04-17T11:42:17.026+0000 I CONTROL  [initandlisten] 
+2025-04-17T11:42:17.026+0000 I CONTROL  [initandlisten] 
+2025-04-17T11:42:17.026+0000 I CONTROL  [initandlisten] ** WARNING: /sys/kernel/mm/transparent_hugepage/enabled is 'always'.
+2025-04-17T11:42:17.026+0000 I CONTROL  [initandlisten] **        We suggest setting it to 'never'
+2025-04-17T11:42:17.026+0000 I CONTROL  [initandlisten] 
+2025-04-17T11:42:17.026+0000 I CONTROL  [initandlisten] ** WARNING: Running wiredTiger with the --nojournal option in a replica set
+2025-04-17T11:42:17.026+0000 I CONTROL  [initandlisten] **          is deprecated and subject to be removed in a future version.
+2025-04-17T11:42:17.026+0000 I CONTROL  [initandlisten] 
+2025-04-17T11:42:17.028+0000 W SHARDING [initandlisten] Started with --shardsvr, but no shardIdentity document was found on disk in admin.system.version. This most likely means this server has not yet been added to a sharded cluster.
+2025-04-17T11:42:17.028+0000 I STORAGE  [initandlisten] createCollection: local.startup_log with no UUID.
+2025-04-17T11:42:17.037+0000 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory './data/a4/diagnostic.data'
+2025-04-17T11:42:17.038+0000 I STORAGE  [initandlisten] createCollection: local.me with no UUID.
+2025-04-17T11:42:17.047+0000 I STORAGE  [initandlisten] createCollection: local.replset.minvalid with no UUID.
+2025-04-17T11:42:17.056+0000 I REPL     [initandlisten] Did not find local voted for document at startup.
+2025-04-17T11:42:17.056+0000 I REPL     [initandlisten] Did not find local Rollback ID document at startup. Creating one.
+2025-04-17T11:42:17.056+0000 I STORAGE  [initandlisten] createCollection: local.system.rollback.id with no UUID.
+2025-04-17T11:42:17.065+0000 I REPL     [initandlisten] Initialized the rollback ID to 1
+2025-04-17T11:42:17.065+0000 I REPL     [initandlisten] Did not find local replica set configuration document at startup;  NoMatchingDocument: Did not find replica set configuration document in local.system.replset
+2025-04-17T11:42:17.065+0000 I CONTROL  [LogicalSessionCacheReap] Sessions collection is not set up; waiting until next sessions reap interval: sharding state is not yet initialized
+2025-04-17T11:42:17.065+0000 I NETWORK  [initandlisten] waiting for connections on port 20003
+2025-04-17T11:47:17.065+0000 I CONTROL  [LogicalSessionCacheReap] Sessions collection is not set up; waiting until next sessions reap interval: sharding state is not yet initialized
+2025-04-17T11:50:37.961+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:33202 #1 (1 connection now open)
+2025-04-17T11:50:37.961+0000 I NETWORK  [conn1] end connection 127.0.0.1:33202 (0 connections now open)
+2025-04-17T11:50:37.962+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:33206 #2 (1 connection now open)
+2025-04-17T11:50:37.963+0000 I NETWORK  [conn2] received client metadata from 127.0.0.1:33206 conn2: { driver: { name: "NetworkInterfaceASIO-Replication", version: "3.6.8" }, os: { type: "Linux", name: "Ubuntu", architecture: "x86_64", version: "20.04" } }
+2025-04-17T11:50:37.965+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:33210 #3 (2 connections now open)
+2025-04-17T11:50:37.965+0000 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:20000
+2025-04-17T11:50:37.966+0000 I NETWORK  [conn3] received client metadata from 127.0.0.1:33210 conn3: { driver: { name: "NetworkInterfaceASIO-Replication", version: "3.6.8" }, os: { type: "Linux", name: "Ubuntu", architecture: "x86_64", version: "20.04" } }
+2025-04-17T11:50:37.969+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:33214 #4 (3 connections now open)
+2025-04-17T11:50:37.969+0000 I NETWORK  [conn4] end connection 127.0.0.1:33214 (2 connections now open)
+2025-04-17T11:50:37.971+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:33226 #5 (3 connections now open)
+2025-04-17T11:50:37.972+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:33230 #6 (4 connections now open)
+2025-04-17T11:50:37.972+0000 I NETWORK  [conn6] received client metadata from 127.0.0.1:33230 conn6: { driver: { name: "NetworkInterfaceASIO-Replication", version: "3.6.8" }, os: { type: "Linux", name: "Ubuntu", architecture: "x86_64", version: "20.04" } }
+2025-04-17T11:50:37.973+0000 I ASIO     [NetworkInterfaceASIO-Replication-0] Successfully connected to localhost:20000, took 8ms (1 connections now open to localhost:20000)
+2025-04-17T11:50:37.974+0000 I NETWORK  [conn5] end connection 127.0.0.1:33226 (3 connections now open)
+2025-04-17T11:50:37.974+0000 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:20001
+2025-04-17T11:50:37.975+0000 I ASIO     [NetworkInterfaceASIO-Replication-0] Successfully connected to localhost:20001, took 1ms (1 connections now open to localhost:20001)
+2025-04-17T11:50:37.976+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:33238 #7 (4 connections now open)
+2025-04-17T11:50:37.976+0000 I NETWORK  [conn7] received client metadata from 127.0.0.1:33238 conn7: { driver: { name: "NetworkInterfaceASIO-Replication", version: "3.6.8" }, os: { type: "Linux", name: "Ubuntu", architecture: "x86_64", version: "20.04" } }
+2025-04-17T11:50:37.976+0000 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:20002
+2025-04-17T11:50:37.977+0000 I ASIO     [NetworkInterfaceASIO-Replication-0] Successfully connected to localhost:20002, took 1ms (1 connections now open to localhost:20002)
+2025-04-17T11:50:37.979+0000 I STORAGE  [replexec-0] createCollection: local.system.replset with no UUID.
+2025-04-17T11:50:37.997+0000 I REPL     [replexec-0] 
+2025-04-17T11:50:37.997+0000 I REPL     [replexec-0] ** WARNING: This replica set is running without journaling enabled but the 
+2025-04-17T11:50:37.997+0000 I REPL     [replexec-0] **          writeConcernMajorityJournalDefault option to the replica set config 
+2025-04-17T11:50:37.997+0000 I REPL     [replexec-0] **          is set to true. The writeConcernMajorityJournalDefault 
+2025-04-17T11:50:37.997+0000 I REPL     [replexec-0] **          option to the replica set config must be set to false 
+2025-04-17T11:50:37.997+0000 I REPL     [replexec-0] **          or w:majority write concerns will never complete.
+2025-04-17T11:50:37.997+0000 I REPL     [replexec-0] 
+2025-04-17T11:50:37.997+0000 I REPL     [replexec-0] New replica set config in use: { _id: "shard-a", version: 4, protocolVersion: 1, members: [ { _id: 0, host: "localhost:20000", arbiterOnly: false, buildIndexes: true, hidden: false, priority: 1.0, tags: {}, slaveDelay: 0, votes: 1 }, { _id: 1, host: "localhost:20001", arbiterOnly: false, buildIndexes: true, hidden: false, priority: 1.0, tags: {}, slaveDelay: 0, votes: 1 }, { _id: 2, host: "localhost:20002", arbiterOnly: false, buildIndexes: true, hidden: false, priority: 1.0, tags: {}, slaveDelay: 0, votes: 1 }, { _id: 3, host: "localhost:20003", arbiterOnly: true, buildIndexes: true, hidden: false, priority: 0.0, tags: {}, slaveDelay: 0, votes: 1 } ], settings: { chainingAllowed: true, heartbeatIntervalMillis: 2000, heartbeatTimeoutSecs: 10, electionTimeoutMillis: 10000, catchUpTimeoutMillis: -1, catchUpTakeoverDelayMillis: 30000, getLastErrorModes: {}, getLastErrorDefaults: { w: 1, wtimeout: 0 }, replicaSetId: ObjectId('6800eac517ce6756068cf04c') } }
+2025-04-17T11:50:37.997+0000 I REPL     [replexec-0] This node is localhost:20003 in the config
+2025-04-17T11:50:37.997+0000 I REPL     [replexec-0] transition to ARBITER from STARTUP
+2025-04-17T11:50:37.997+0000 I REPL     [replexec-6] Member localhost:20000 is now in state PRIMARY
+2025-04-17T11:50:37.997+0000 I REPL     [replexec-3] Member localhost:20001 is now in state SECONDARY
+2025-04-17T11:50:37.997+0000 I REPL     [replexec-5] Member localhost:20002 is now in state SECONDARY
+2025-04-17T11:51:37.966+0000 I NETWORK  [conn2] end connection 127.0.0.1:33206 (3 connections now open)
+2025-04-17T11:52:17.065+0000 I CONTROL  [LogicalSessionCacheReap] Sessions collection is not set up; waiting until next sessions reap interval: sharding state is not yet initialized
+2025-04-17T11:57:17.065+0000 I CONTROL  [LogicalSessionCacheReap] Sessions collection is not set up; waiting until next sessions reap interval: sharding state is not yet initialized
+2025-04-17T12:02:17.065+0000 I CONTROL  [LogicalSessionCacheReap] Sessions collection is not set up; waiting until next sessions reap interval: sharding state is not yet initialized
+2025-04-17T12:07:17.065+0000 I CONTROL  [LogicalSessionCacheReap] Sessions collection is not set up; waiting until next sessions reap interval: sharding state is not yet initialized
+2025-04-17T12:12:17.065+0000 I CONTROL  [LogicalSessionCacheReap] Sessions collection is not set up; waiting until next sessions reap interval: sharding state is not yet initialized
+2025-04-17T12:17:17.065+0000 I CONTROL  [LogicalSessionCacheReap] Sessions collection is not set up; waiting until next sessions reap interval: sharding state is not yet initialized
+2025-04-17T12:22:17.065+0000 I CONTROL  [LogicalSessionCacheReap] Sessions collection is not set up; waiting until next sessions reap interval: sharding state is not yet initialized
+2025-04-17T12:27:17.065+0000 I CONTROL  [LogicalSessionCacheReap] Sessions collection is not set up; waiting until next sessions reap interval: sharding state is not yet initialized
+2025-04-17T12:32:17.065+0000 I CONTROL  [LogicalSessionCacheReap] Sessions collection is not set up; waiting until next sessions reap interval: sharding state is not yet initialized
+2025-04-17T12:37:17.065+0000 I CONTROL  [LogicalSessionCacheReap] Sessions collection is not set up; waiting until next sessions reap interval: sharding state is not yet initialized
+2025-04-17T12:42:17.065+0000 I CONTROL  [LogicalSessionCacheReap] Sessions collection is not set up; waiting until next sessions reap interval: sharding state is not yet initialized
+2025-04-17T12:47:17.065+0000 I CONTROL  [LogicalSessionCacheReap] Sessions collection is not set up; waiting until next sessions reap interval: sharding state is not yet initialized

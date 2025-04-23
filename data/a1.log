@@ -1,0 +1,388 @@
+2025-04-17T11:40:23.245+0000 I CONTROL  [initandlisten] MongoDB starting : pid=6342 port=20000 dbpath=./data/a1 64-bit host=codespaces-c69bba
+2025-04-17T11:40:23.245+0000 I CONTROL  [initandlisten] db version v3.6.8
+2025-04-17T11:40:23.245+0000 I CONTROL  [initandlisten] git version: 8e540c0b6db93ce994cc548f000900bdc740f80a
+2025-04-17T11:40:23.245+0000 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.1.1f  31 Mar 2020
+2025-04-17T11:40:23.245+0000 I CONTROL  [initandlisten] allocator: tcmalloc
+2025-04-17T11:40:23.245+0000 I CONTROL  [initandlisten] modules: none
+2025-04-17T11:40:23.245+0000 I CONTROL  [initandlisten] build environment:
+2025-04-17T11:40:23.245+0000 I CONTROL  [initandlisten]     distarch: x86_64
+2025-04-17T11:40:23.245+0000 I CONTROL  [initandlisten]     target_arch: x86_64
+2025-04-17T11:40:23.245+0000 I CONTROL  [initandlisten] options: { net: { port: 20000 }, replication: { replSet: "shard-a" }, sharding: { clusterRole: "shardsvr" }, storage: { dbPath: "./data/a1", journal: { enabled: false } }, systemLog: { destination: "file", path: "./data/a1.log" } }
+2025-04-17T11:40:23.246+0000 I STORAGE  [initandlisten] 
+2025-04-17T11:40:23.246+0000 I STORAGE  [initandlisten] ** WARNING: Using the XFS filesystem is strongly recommended with the WiredTiger storage engine
+2025-04-17T11:40:23.246+0000 I STORAGE  [initandlisten] **          See http://dochub.mongodb.org/core/prodnotes-filesystem
+2025-04-17T11:40:23.246+0000 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=3456M,session_max=20000,eviction=(threads_min=4,threads_max=4),config_base=false,statistics=(fast),cache_cursors=false,compatibility=(release="3.0",require_max="3.0"),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),statistics_log=(wait=0),verbose=(recovery_progress),,log=(enabled=false),
+2025-04-17T11:40:23.816+0000 I STORAGE  [initandlisten] WiredTiger message [1744890023:816895][6342:0x75da6e008ac0], txn-recover: Set global recovery timestamp: 0
+2025-04-17T11:40:23.865+0000 I CONTROL  [initandlisten] 
+2025-04-17T11:40:23.865+0000 I CONTROL  [initandlisten] ** WARNING: Access control is not enabled for the database.
+2025-04-17T11:40:23.865+0000 I CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted.
+2025-04-17T11:40:23.865+0000 I CONTROL  [initandlisten] 
+2025-04-17T11:40:23.865+0000 I CONTROL  [initandlisten] ** WARNING: This server is bound to localhost.
+2025-04-17T11:40:23.865+0000 I CONTROL  [initandlisten] **          Remote systems will be unable to connect to this server. 
+2025-04-17T11:40:23.865+0000 I CONTROL  [initandlisten] **          Start the server with --bind_ip <address> to specify which IP 
+2025-04-17T11:40:23.865+0000 I CONTROL  [initandlisten] **          addresses it should serve responses from, or with --bind_ip_all to
+2025-04-17T11:40:23.865+0000 I CONTROL  [initandlisten] **          bind to all interfaces. If this behavior is desired, start the
+2025-04-17T11:40:23.865+0000 I CONTROL  [initandlisten] **          server with --bind_ip 127.0.0.1 to disable this warning.
+2025-04-17T11:40:23.865+0000 I CONTROL  [initandlisten] 
+2025-04-17T11:40:23.865+0000 I CONTROL  [initandlisten] 
+2025-04-17T11:40:23.865+0000 I CONTROL  [initandlisten] ** WARNING: /sys/kernel/mm/transparent_hugepage/enabled is 'always'.
+2025-04-17T11:40:23.865+0000 I CONTROL  [initandlisten] **        We suggest setting it to 'never'
+2025-04-17T11:40:23.865+0000 I CONTROL  [initandlisten] 
+2025-04-17T11:40:23.865+0000 I CONTROL  [initandlisten] ** WARNING: Running wiredTiger with the --nojournal option in a replica set
+2025-04-17T11:40:23.865+0000 I CONTROL  [initandlisten] **          is deprecated and subject to be removed in a future version.
+2025-04-17T11:40:23.865+0000 I CONTROL  [initandlisten] 
+2025-04-17T11:40:23.882+0000 W SHARDING [initandlisten] Started with --shardsvr, but no shardIdentity document was found on disk in admin.system.version. This most likely means this server has not yet been added to a sharded cluster.
+2025-04-17T11:40:23.882+0000 I STORAGE  [initandlisten] createCollection: local.startup_log with no UUID.
+2025-04-17T11:40:23.890+0000 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory './data/a1/diagnostic.data'
+2025-04-17T11:40:23.890+0000 I STORAGE  [initandlisten] createCollection: local.me with no UUID.
+2025-04-17T11:40:23.898+0000 I STORAGE  [initandlisten] createCollection: local.replset.minvalid with no UUID.
+2025-04-17T11:40:23.906+0000 I REPL     [initandlisten] Did not find local voted for document at startup.
+2025-04-17T11:40:23.906+0000 I REPL     [initandlisten] Did not find local Rollback ID document at startup. Creating one.
+2025-04-17T11:40:23.906+0000 I STORAGE  [initandlisten] createCollection: local.system.rollback.id with no UUID.
+2025-04-17T11:40:23.913+0000 I REPL     [initandlisten] Initialized the rollback ID to 1
+2025-04-17T11:40:23.913+0000 I REPL     [initandlisten] Did not find local replica set configuration document at startup;  NoMatchingDocument: Did not find replica set configuration document in local.system.replset
+2025-04-17T11:40:23.913+0000 I NETWORK  [initandlisten] waiting for connections on port 20000
+2025-04-17T11:40:23.913+0000 I CONTROL  [LogicalSessionCacheReap] Sessions collection is not set up; waiting until next sessions reap interval: sharding state is not yet initialized
+2025-04-17T11:45:23.913+0000 I CONTROL  [LogicalSessionCacheReap] Sessions collection is not set up; waiting until next sessions reap interval: sharding state is not yet initialized
+2025-04-17T11:49:17.884+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:59462 #1 (1 connection now open)
+2025-04-17T11:49:17.884+0000 I NETWORK  [conn1] received client metadata from 127.0.0.1:59462 conn1: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "3.6.8" }, os: { type: "Linux", name: "Ubuntu", architecture: "x86_64", version: "20.04" } }
+2025-04-17T11:49:25.208+0000 I COMMAND  [conn1] initiate : no configuration specified. Using a default configuration for the set
+2025-04-17T11:49:25.209+0000 I COMMAND  [conn1] created this configuration for initiation : { _id: "shard-a", version: 1, members: [ { _id: 0, host: "localhost:20000" } ] }
+2025-04-17T11:49:25.209+0000 I REPL     [conn1] replSetInitiate admin command received from client
+2025-04-17T11:49:25.209+0000 I REPL     [conn1] replSetInitiate config object with 1 members parses ok
+2025-04-17T11:49:25.209+0000 I REPL     [conn1] ******
+2025-04-17T11:49:25.209+0000 I REPL     [conn1] creating replication oplog of size: 990MB...
+2025-04-17T11:49:25.209+0000 I STORAGE  [conn1] createCollection: local.oplog.rs with no UUID.
+2025-04-17T11:49:25.217+0000 I STORAGE  [conn1] Starting WiredTigerRecordStoreThread local.oplog.rs
+2025-04-17T11:49:25.217+0000 I STORAGE  [conn1] The size storer reports that the oplog contains 0 records totaling to 0 bytes
+2025-04-17T11:49:25.217+0000 I STORAGE  [conn1] Scanning the oplog to determine where to place markers for truncation
+2025-04-17T11:49:25.224+0000 I REPL     [conn1] ******
+2025-04-17T11:49:25.224+0000 I STORAGE  [conn1] createCollection: local.system.replset with no UUID.
+2025-04-17T11:49:25.245+0000 I STORAGE  [conn1] createCollection: admin.system.version with no UUID.
+2025-04-17T11:49:25.258+0000 I REPL     [conn1] 
+2025-04-17T11:49:25.258+0000 I REPL     [conn1] ** WARNING: This replica set is running without journaling enabled but the 
+2025-04-17T11:49:25.258+0000 I REPL     [conn1] **          writeConcernMajorityJournalDefault option to the replica set config 
+2025-04-17T11:49:25.258+0000 I REPL     [conn1] **          is set to true. The writeConcernMajorityJournalDefault 
+2025-04-17T11:49:25.258+0000 I REPL     [conn1] **          option to the replica set config must be set to false 
+2025-04-17T11:49:25.258+0000 I REPL     [conn1] **          or w:majority write concerns will never complete.
+2025-04-17T11:49:25.258+0000 I REPL     [conn1] 
+2025-04-17T11:49:25.259+0000 I REPL     [conn1] New replica set config in use: { _id: "shard-a", version: 1, protocolVersion: 1, members: [ { _id: 0, host: "localhost:20000", arbiterOnly: false, buildIndexes: true, hidden: false, priority: 1.0, tags: {}, slaveDelay: 0, votes: 1 } ], settings: { chainingAllowed: true, heartbeatIntervalMillis: 2000, heartbeatTimeoutSecs: 10, electionTimeoutMillis: 10000, catchUpTimeoutMillis: -1, catchUpTakeoverDelayMillis: 30000, getLastErrorModes: {}, getLastErrorDefaults: { w: 1, wtimeout: 0 }, replicaSetId: ObjectId('6800eac517ce6756068cf04c') } }
+2025-04-17T11:49:25.259+0000 I REPL     [conn1] This node is localhost:20000 in the config
+2025-04-17T11:49:25.259+0000 I REPL     [conn1] transition to STARTUP2 from STARTUP
+2025-04-17T11:49:25.259+0000 I REPL     [conn1] Starting replication storage threads
+2025-04-17T11:49:25.259+0000 I REPL     [conn1] transition to RECOVERING from STARTUP2
+2025-04-17T11:49:25.259+0000 I REPL     [conn1] Starting replication fetcher thread
+2025-04-17T11:49:25.259+0000 I REPL     [conn1] Starting replication applier thread
+2025-04-17T11:49:25.259+0000 I REPL     [conn1] Starting replication reporter thread
+2025-04-17T11:49:25.260+0000 I REPL     [rsSync] transition to SECONDARY from RECOVERING
+2025-04-17T11:49:25.261+0000 I REPL     [rsSync] conducting a dry run election to see if we could be elected. current term: 0
+2025-04-17T11:49:25.261+0000 I REPL     [replexec-0] dry election run succeeded, running for election in term 1
+2025-04-17T11:49:25.261+0000 I STORAGE  [replexec-2] createCollection: local.replset.election with no UUID.
+2025-04-17T11:49:25.281+0000 I REPL     [replexec-2] election succeeded, assuming primary role in term 1
+2025-04-17T11:49:25.281+0000 I REPL     [replexec-2] transition to PRIMARY from SECONDARY
+2025-04-17T11:49:25.281+0000 I REPL     [replexec-2] Resetting sync source to empty, which was :27017
+2025-04-17T11:49:25.281+0000 I REPL     [replexec-2] Entering primary catch-up mode.
+2025-04-17T11:49:25.282+0000 I REPL     [replexec-2] Exited primary catch-up mode.
+2025-04-17T11:49:27.261+0000 I STORAGE  [rsSync] createCollection: config.transactions with no UUID.
+2025-04-17T11:49:27.277+0000 I REPL     [rsSync] transition to primary complete; database writes are now permitted
+2025-04-17T11:50:05.687+0000 I REPL     [conn1] replSetReconfig admin command received from client; new config: { _id: "shard-a", version: 2, protocolVersion: 1, members: [ { _id: 0, host: "localhost:20000", arbiterOnly: false, buildIndexes: true, hidden: false, priority: 1.0, tags: {}, slaveDelay: 0, votes: 1 }, { _id: 1.0, host: "localhost:20001" } ], settings: { chainingAllowed: true, heartbeatIntervalMillis: 2000, heartbeatTimeoutSecs: 10, electionTimeoutMillis: 10000, catchUpTimeoutMillis: -1, catchUpTakeoverDelayMillis: 30000, getLastErrorModes: {}, getLastErrorDefaults: { w: 1, wtimeout: 0 }, replicaSetId: ObjectId('6800eac517ce6756068cf04c') } }
+2025-04-17T11:50:05.688+0000 I REPL     [conn1] replSetReconfig config object with 2 members parses ok
+2025-04-17T11:50:05.688+0000 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:20001
+2025-04-17T11:50:05.688+0000 I ASIO     [NetworkInterfaceASIO-Replication-0] Successfully connected to localhost:20001, took 0ms (1 connections now open to localhost:20001)
+2025-04-17T11:50:05.689+0000 I REPL     [replexec-1] New replica set config in use: { _id: "shard-a", version: 2, protocolVersion: 1, members: [ { _id: 0, host: "localhost:20000", arbiterOnly: false, buildIndexes: true, hidden: false, priority: 1.0, tags: {}, slaveDelay: 0, votes: 1 }, { _id: 1, host: "localhost:20001", arbiterOnly: false, buildIndexes: true, hidden: false, priority: 1.0, tags: {}, slaveDelay: 0, votes: 1 } ], settings: { chainingAllowed: true, heartbeatIntervalMillis: 2000, heartbeatTimeoutSecs: 10, electionTimeoutMillis: 10000, catchUpTimeoutMillis: -1, catchUpTakeoverDelayMillis: 30000, getLastErrorModes: {}, getLastErrorDefaults: { w: 1, wtimeout: 0 }, replicaSetId: ObjectId('6800eac517ce6756068cf04c') } }
+2025-04-17T11:50:05.689+0000 I REPL     [replexec-1] This node is localhost:20000 in the config
+2025-04-17T11:50:05.689+0000 I REPL     [replexec-0] Member localhost:20001 is now in state STARTUP
+2025-04-17T11:50:05.689+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:52792 #2 (2 connections now open)
+2025-04-17T11:50:05.690+0000 I NETWORK  [conn2] received client metadata from 127.0.0.1:52792 conn2: { driver: { name: "NetworkInterfaceASIO-Replication", version: "3.6.8" }, os: { type: "Linux", name: "Ubuntu", architecture: "x86_64", version: "20.04" } }
+2025-04-17T11:50:05.691+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:52796 #3 (3 connections now open)
+2025-04-17T11:50:05.692+0000 I NETWORK  [conn3] end connection 127.0.0.1:52796 (2 connections now open)
+2025-04-17T11:50:05.759+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:52800 #4 (3 connections now open)
+2025-04-17T11:50:05.759+0000 I NETWORK  [conn4] received client metadata from 127.0.0.1:52800 conn4: { driver: { name: "NetworkInterfaceASIO-RS", version: "3.6.8" }, os: { type: "Linux", name: "Ubuntu", architecture: "x86_64", version: "20.04" } }
+2025-04-17T11:50:05.760+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:52814 #5 (4 connections now open)
+2025-04-17T11:50:05.760+0000 I NETWORK  [conn5] received client metadata from 127.0.0.1:52814 conn5: { driver: { name: "NetworkInterfaceASIO-RS", version: "3.6.8" }, os: { type: "Linux", name: "Ubuntu", architecture: "x86_64", version: "20.04" } }
+2025-04-17T11:50:07.689+0000 I REPL     [replexec-0] Member localhost:20001 is now in state SECONDARY
+2025-04-17T11:50:10.763+0000 I NETWORK  [conn4] end connection 127.0.0.1:52800 (3 connections now open)
+2025-04-17T11:50:16.346+0000 I REPL     [conn1] replSetReconfig admin command received from client; new config: { _id: "shard-a", version: 3, protocolVersion: 1, members: [ { _id: 0, host: "localhost:20000", arbiterOnly: false, buildIndexes: true, hidden: false, priority: 1.0, tags: {}, slaveDelay: 0, votes: 1 }, { _id: 1, host: "localhost:20001", arbiterOnly: false, buildIndexes: true, hidden: false, priority: 1.0, tags: {}, slaveDelay: 0, votes: 1 }, { _id: 2.0, host: "localhost:20002" } ], settings: { chainingAllowed: true, heartbeatIntervalMillis: 2000, heartbeatTimeoutSecs: 10, electionTimeoutMillis: 10000, catchUpTimeoutMillis: -1, catchUpTakeoverDelayMillis: 30000, getLastErrorModes: {}, getLastErrorDefaults: { w: 1, wtimeout: 0 }, replicaSetId: ObjectId('6800eac517ce6756068cf04c') } }
+2025-04-17T11:50:16.347+0000 I REPL     [conn1] replSetReconfig config object with 3 members parses ok
+2025-04-17T11:50:16.347+0000 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:20002
+2025-04-17T11:50:16.348+0000 I REPL     [replexec-1] New replica set config in use: { _id: "shard-a", version: 3, protocolVersion: 1, members: [ { _id: 0, host: "localhost:20000", arbiterOnly: false, buildIndexes: true, hidden: false, priority: 1.0, tags: {}, slaveDelay: 0, votes: 1 }, { _id: 1, host: "localhost:20001", arbiterOnly: false, buildIndexes: true, hidden: false, priority: 1.0, tags: {}, slaveDelay: 0, votes: 1 }, { _id: 2, host: "localhost:20002", arbiterOnly: false, buildIndexes: true, hidden: false, priority: 1.0, tags: {}, slaveDelay: 0, votes: 1 } ], settings: { chainingAllowed: true, heartbeatIntervalMillis: 2000, heartbeatTimeoutSecs: 10, electionTimeoutMillis: 10000, catchUpTimeoutMillis: -1, catchUpTakeoverDelayMillis: 30000, getLastErrorModes: {}, getLastErrorDefaults: { w: 1, wtimeout: 0 }, replicaSetId: ObjectId('6800eac517ce6756068cf04c') } }
+2025-04-17T11:50:16.348+0000 I REPL     [replexec-1] This node is localhost:20000 in the config
+2025-04-17T11:50:16.348+0000 I ASIO     [NetworkInterfaceASIO-Replication-0] Successfully connected to localhost:20002, took 1ms (1 connections now open to localhost:20002)
+2025-04-17T11:50:16.348+0000 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:20002
+2025-04-17T11:50:16.349+0000 I REPL     [replexec-0] Member localhost:20002 is now in state STARTUP
+2025-04-17T11:50:16.350+0000 I ASIO     [NetworkInterfaceASIO-Replication-0] Successfully connected to localhost:20002, took 2ms (2 connections now open to localhost:20002)
+2025-04-17T11:50:16.350+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:37072 #6 (4 connections now open)
+2025-04-17T11:50:16.351+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:37060 #7 (5 connections now open)
+2025-04-17T11:50:16.351+0000 I NETWORK  [conn6] received client metadata from 127.0.0.1:37072 conn6: { driver: { name: "NetworkInterfaceASIO-Replication", version: "3.6.8" }, os: { type: "Linux", name: "Ubuntu", architecture: "x86_64", version: "20.04" } }
+2025-04-17T11:50:16.351+0000 I NETWORK  [conn7] end connection 127.0.0.1:37060 (4 connections now open)
+2025-04-17T11:50:16.353+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:37084 #8 (5 connections now open)
+2025-04-17T11:50:16.353+0000 I NETWORK  [conn8] end connection 127.0.0.1:37084 (4 connections now open)
+2025-04-17T11:50:16.455+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:37086 #9 (5 connections now open)
+2025-04-17T11:50:16.456+0000 I NETWORK  [conn9] received client metadata from 127.0.0.1:37086 conn9: { driver: { name: "NetworkInterfaceASIO-RS", version: "3.6.8" }, os: { type: "Linux", name: "Ubuntu", architecture: "x86_64", version: "20.04" } }
+2025-04-17T11:50:16.457+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:37090 #10 (6 connections now open)
+2025-04-17T11:50:16.457+0000 I NETWORK  [conn10] received client metadata from 127.0.0.1:37090 conn10: { driver: { name: "NetworkInterfaceASIO-RS", version: "3.6.8" }, os: { type: "Linux", name: "Ubuntu", architecture: "x86_64", version: "20.04" } }
+2025-04-17T11:50:16.805+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:37100 #11 (7 connections now open)
+2025-04-17T11:50:16.805+0000 I NETWORK  [conn11] received client metadata from 127.0.0.1:37100 conn11: { driver: { name: "NetworkInterfaceASIO-RS", version: "3.6.8" }, os: { type: "Linux", name: "Ubuntu", architecture: "x86_64", version: "20.04" } }
+2025-04-17T11:50:18.349+0000 I REPL     [replexec-0] Member localhost:20002 is now in state SECONDARY
+2025-04-17T11:50:23.913+0000 I CONTROL  [LogicalSessionCacheReap] Sessions collection is not set up; waiting until next sessions reap interval: sharding state is not yet initialized
+2025-04-17T11:50:27.297+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:46780 #12 (8 connections now open)
+2025-04-17T11:50:27.298+0000 I NETWORK  [conn12] received client metadata from 127.0.0.1:46780 conn12: { driver: { name: "NetworkInterfaceASIO-RS", version: "3.6.8" }, os: { type: "Linux", name: "Ubuntu", architecture: "x86_64", version: "20.04" } }
+2025-04-17T11:50:37.959+0000 I REPL     [conn1] replSetReconfig admin command received from client; new config: { _id: "shard-a", version: 4, protocolVersion: 1, members: [ { _id: 0, host: "localhost:20000", arbiterOnly: false, buildIndexes: true, hidden: false, priority: 1.0, tags: {}, slaveDelay: 0, votes: 1 }, { _id: 1, host: "localhost:20001", arbiterOnly: false, buildIndexes: true, hidden: false, priority: 1.0, tags: {}, slaveDelay: 0, votes: 1 }, { _id: 2, host: "localhost:20002", arbiterOnly: false, buildIndexes: true, hidden: false, priority: 1.0, tags: {}, slaveDelay: 0, votes: 1 }, { _id: 3.0, host: "localhost:20003", arbiterOnly: true } ], settings: { chainingAllowed: true, heartbeatIntervalMillis: 2000, heartbeatTimeoutSecs: 10, electionTimeoutMillis: 10000, catchUpTimeoutMillis: -1, catchUpTakeoverDelayMillis: 30000, getLastErrorModes: {}, getLastErrorDefaults: { w: 1, wtimeout: 0 }, replicaSetId: ObjectId('6800eac517ce6756068cf04c') } }
+2025-04-17T11:50:37.961+0000 I REPL     [conn1] replSetReconfig config object with 4 members parses ok
+2025-04-17T11:50:37.961+0000 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:20003
+2025-04-17T11:50:37.962+0000 I REPL     [replexec-5] New replica set config in use: { _id: "shard-a", version: 4, protocolVersion: 1, members: [ { _id: 0, host: "localhost:20000", arbiterOnly: false, buildIndexes: true, hidden: false, priority: 1.0, tags: {}, slaveDelay: 0, votes: 1 }, { _id: 1, host: "localhost:20001", arbiterOnly: false, buildIndexes: true, hidden: false, priority: 1.0, tags: {}, slaveDelay: 0, votes: 1 }, { _id: 2, host: "localhost:20002", arbiterOnly: false, buildIndexes: true, hidden: false, priority: 1.0, tags: {}, slaveDelay: 0, votes: 1 }, { _id: 3, host: "localhost:20003", arbiterOnly: true, buildIndexes: true, hidden: false, priority: 0.0, tags: {}, slaveDelay: 0, votes: 1 } ], settings: { chainingAllowed: true, heartbeatIntervalMillis: 2000, heartbeatTimeoutSecs: 10, electionTimeoutMillis: 10000, catchUpTimeoutMillis: -1, catchUpTakeoverDelayMillis: 30000, getLastErrorModes: {}, getLastErrorDefaults: { w: 1, wtimeout: 0 }, replicaSetId: ObjectId('6800eac517ce6756068cf04c') } }
+2025-04-17T11:50:37.963+0000 I REPL     [replexec-5] This node is localhost:20000 in the config
+2025-04-17T11:50:37.963+0000 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:20003
+2025-04-17T11:50:37.964+0000 I ASIO     [NetworkInterfaceASIO-Replication-0] Successfully connected to localhost:20003, took 3ms (2 connections now open to localhost:20003)
+2025-04-17T11:50:37.966+0000 I REPL     [replexec-1] Member localhost:20003 is now in state STARTUP
+2025-04-17T11:50:37.967+0000 I ASIO     [NetworkInterfaceASIO-Replication-0] Successfully connected to localhost:20003, took 4ms (2 connections now open to localhost:20003)
+2025-04-17T11:50:37.967+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:54496 #13 (9 connections now open)
+2025-04-17T11:50:37.968+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:54506 #14 (10 connections now open)
+2025-04-17T11:50:37.968+0000 I NETWORK  [conn13] end connection 127.0.0.1:54496 (9 connections now open)
+2025-04-17T11:50:37.970+0000 I NETWORK  [conn14] end connection 127.0.0.1:54506 (8 connections now open)
+2025-04-17T11:50:37.971+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:54516 #15 (9 connections now open)
+2025-04-17T11:50:37.971+0000 I NETWORK  [conn15] received client metadata from 127.0.0.1:54516 conn15: { driver: { name: "NetworkInterfaceASIO-Replication", version: "3.6.8" }, os: { type: "Linux", name: "Ubuntu", architecture: "x86_64", version: "20.04" } }
+2025-04-17T11:50:37.975+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:54524 #16 (10 connections now open)
+2025-04-17T11:50:37.976+0000 I NETWORK  [conn16] end connection 127.0.0.1:54524 (9 connections now open)
+2025-04-17T11:50:39.966+0000 I REPL     [replexec-1] Member localhost:20003 is now in state ARBITER
+2025-04-17T11:51:03.731+0000 I NETWORK  [conn1] end connection 127.0.0.1:59462 (8 connections now open)
+2025-04-17T11:51:16.349+0000 I ASIO     [NetworkInterfaceASIO-Replication-0] Ending idle connection to host localhost:20002 because the pool meets constraints; 1 connections to that host remain open
+2025-04-17T11:51:27.297+0000 I NETWORK  [conn9] end connection 127.0.0.1:37086 (7 connections now open)
+2025-04-17T11:51:37.966+0000 I ASIO     [NetworkInterfaceASIO-Replication-0] Ending idle connection to host localhost:20003 because the pool meets constraints; 1 connections to that host remain open
+2025-04-17T11:52:42.296+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:53158 #17 (8 connections now open)
+2025-04-17T11:52:42.297+0000 I NETWORK  [conn17] received client metadata from 127.0.0.1:53158 conn17: { driver: { name: "NetworkInterfaceASIO-RS", version: "3.6.8" }, os: { type: "Linux", name: "Ubuntu", architecture: "x86_64", version: "20.04" } }
+2025-04-17T11:54:27.299+0000 I NETWORK  [conn5] end connection 127.0.0.1:52814 (7 connections now open)
+2025-04-17T11:54:52.300+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:51930 #18 (8 connections now open)
+2025-04-17T11:54:52.300+0000 I NETWORK  [conn18] received client metadata from 127.0.0.1:51930 conn18: { driver: { name: "NetworkInterfaceASIO-RS", version: "3.6.8" }, os: { type: "Linux", name: "Ubuntu", architecture: "x86_64", version: "20.04" } }
+2025-04-17T11:55:23.913+0000 I CONTROL  [LogicalSessionCacheReap] Sessions collection is not set up; waiting until next sessions reap interval: sharding state is not yet initialized
+2025-04-17T11:55:52.300+0000 I NETWORK  [conn12] end connection 127.0.0.1:46780 (7 connections now open)
+2025-04-17T11:56:52.304+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:46730 #19 (8 connections now open)
+2025-04-17T11:56:52.305+0000 I NETWORK  [conn19] received client metadata from 127.0.0.1:46730 conn19: { driver: { name: "NetworkInterfaceASIO-RS", version: "3.6.8" }, os: { type: "Linux", name: "Ubuntu", architecture: "x86_64", version: "20.04" } }
+2025-04-17T11:57:52.304+0000 I NETWORK  [conn18] end connection 127.0.0.1:51930 (7 connections now open)
+2025-04-17T11:59:12.307+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:35922 #20 (8 connections now open)
+2025-04-17T11:59:12.308+0000 I NETWORK  [conn20] received client metadata from 127.0.0.1:35922 conn20: { driver: { name: "NetworkInterfaceASIO-RS", version: "3.6.8" }, os: { type: "Linux", name: "Ubuntu", architecture: "x86_64", version: "20.04" } }
+2025-04-17T12:00:12.307+0000 I NETWORK  [conn11] end connection 127.0.0.1:37100 (7 connections now open)
+2025-04-17T12:00:23.913+0000 I CONTROL  [LogicalSessionCacheReap] Sessions collection is not set up; waiting until next sessions reap interval: sharding state is not yet initialized
+2025-04-17T12:03:07.310+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:56960 #21 (8 connections now open)
+2025-04-17T12:03:07.310+0000 I NETWORK  [conn21] received client metadata from 127.0.0.1:56960 conn21: { driver: { name: "NetworkInterfaceASIO-RS", version: "3.6.8" }, os: { type: "Linux", name: "Ubuntu", architecture: "x86_64", version: "20.04" } }
+2025-04-17T12:04:52.310+0000 I NETWORK  [conn21] end connection 127.0.0.1:56960 (7 connections now open)
+2025-04-17T12:04:53.012+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:54614 #22 (8 connections now open)
+2025-04-17T12:04:53.012+0000 I NETWORK  [conn22] received client metadata from 127.0.0.1:54614 conn22: { driver: { name: "MongoDB Internal Client", version: "3.6.8" }, os: { type: "Linux", name: "Ubuntu", architecture: "x86_64", version: "20.04" } }
+2025-04-17T12:04:53.014+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:54618 #23 (9 connections now open)
+2025-04-17T12:04:53.014+0000 I NETWORK  [conn23] received client metadata from 127.0.0.1:54618 conn23: { driver: { name: "AddShard-TaskExecutor", version: "3.6.8" }, os: { type: "Linux", name: "Ubuntu", architecture: "x86_64", version: "20.04" } }
+2025-04-17T12:04:53.015+0000 I COMMAND  [conn23] CMD: drop config.system.sessions
+2025-04-17T12:04:57.312+0000 I COMMAND  [conn23] command config.$cmd command: drop { drop: "system.sessions", writeConcern: { w: "majority" }, $db: "config" } numYields:0 reslen:89 locks:{ Global: { acquireCount: { r: 1, w: 1 } }, Database: { acquireCount: { W: 1 } } } protocol:op_msg 4297ms
+2025-04-17T12:04:57.314+0000 I SHARDING [conn23] initializing sharding state with: { _id: "shardIdentity", configsvrConnectionString: "configrs/localhost:30000,localhost:30001,localhost:30002", shardName: "shard-a", clusterId: ObjectId('6800ed744d3aefddab03033a') }
+2025-04-17T12:04:57.314+0000 I SHARDING [conn23] first cluster operation detected, adding sharding hook to enable versioning and authentication to remote servers
+2025-04-17T12:04:57.314+0000 I NETWORK  [conn23] Starting new replica set monitor for configrs/localhost:30000,localhost:30001,localhost:30002
+2025-04-17T12:04:57.315+0000 I SHARDING [conn23] initialized sharding components for primary node.
+2025-04-17T12:04:57.315+0000 I SHARDING [thread24] creating distributed lock ping thread for process codespaces-c69bba:20000:1744891497:2225382985439313477 (sleeping for 30000ms)
+2025-04-17T12:04:57.319+0000 I NETWORK  [replSetDistLockPinger] Successfully connected to localhost:30002 (1 connections now open to localhost:30002 with a 5 second timeout)
+2025-04-17T12:04:57.319+0000 I NETWORK  [ReplicaSetMonitor-TaskExecutor-0] Successfully connected to localhost:30000 (1 connections now open to localhost:30000 with a 5 second timeout)
+2025-04-17T12:04:57.320+0000 I NETWORK  [shard registry reload] Successfully connected to localhost:30001 (1 connections now open to localhost:30001 with a 5 second timeout)
+2025-04-17T12:04:57.320+0000 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Connecting to localhost:30000
+2025-04-17T12:04:57.320+0000 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Connecting to localhost:30000
+2025-04-17T12:04:57.322+0000 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Successfully connected to localhost:30000, took 2ms (2 connections now open to localhost:30000)
+2025-04-17T12:04:57.325+0000 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Successfully connected to localhost:30000, took 5ms (2 connections now open to localhost:30000)
+2025-04-17T12:04:57.331+0000 W SHARDING [replSetDistLockPinger] pinging failed for distributed lock pinger :: caused by :: LockStateChangeFailed: findAndModify query predicate didn't match any lock document
+2025-04-17T12:05:07.356+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:55874 #24 (10 connections now open)
+2025-04-17T12:05:07.356+0000 I NETWORK  [conn24] received client metadata from 127.0.0.1:55874 conn24: { driver: { name: "NetworkInterfaceASIO-RS", version: "3.6.8" }, os: { type: "Linux", name: "Ubuntu", architecture: "x86_64", version: "20.04" } }
+2025-04-17T12:05:17.311+0000 I COMMAND  [conn23] command admin.$cmd command: update { update: "system.version", bypassDocumentValidation: false, ordered: true, updates: [ { q: { _id: "shardIdentity", shardName: "shard-a", clusterId: ObjectId('6800ed744d3aefddab03033a') }, u: { $set: { configsvrConnectionString: "configrs/localhost:30000,localhost:30001,localhost:30002" } }, multi: false, upsert: true } ], writeConcern: { w: "majority", wtimeout: 60000 }, $db: "admin" } numYields:0 reslen:302 locks:{ Global: { acquireCount: { r: 2, w: 2 } }, Database: { acquireCount: { w: 1, W: 1 } }, Collection: { acquireCount: { w: 1 } }, oplog: { acquireCount: { w: 1 } } } protocol:op_msg 19997ms
+2025-04-17T12:05:17.311+0000 I COMMAND  [conn23] setting featureCompatibilityVersion to upgrading to 3.6
+2025-04-17T12:05:17.311+0000 I NETWORK  [conn23] Skip closing connection for connection # 24
+2025-04-17T12:05:17.311+0000 I NETWORK  [conn23] Skip closing connection for connection # 23
+2025-04-17T12:05:17.311+0000 I NETWORK  [conn23] Skip closing connection for connection # 22
+2025-04-17T12:05:17.311+0000 I NETWORK  [conn23] Skip closing connection for connection # 20
+2025-04-17T12:05:17.311+0000 I NETWORK  [conn23] Skip closing connection for connection # 19
+2025-04-17T12:05:17.312+0000 I NETWORK  [conn23] Skip closing connection for connection # 17
+2025-04-17T12:05:17.312+0000 I NETWORK  [conn23] Skip closing connection for connection # 15
+2025-04-17T12:05:17.312+0000 I NETWORK  [conn23] Skip closing connection for connection # 10
+2025-04-17T12:05:17.312+0000 I NETWORK  [conn23] Skip closing connection for connection # 6
+2025-04-17T12:05:17.312+0000 I NETWORK  [conn23] Skip closing connection for connection # 2
+2025-04-17T12:05:23.913+0000 I CONTROL  [LogicalSessionCacheReap] Sessions collection is not set up; waiting until next sessions reap interval: Collection config.system.sessions is not sharded.
+2025-04-17T12:05:27.325+0000 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Connecting to localhost:30002
+2025-04-17T12:05:27.326+0000 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Successfully connected to localhost:30002, took 1ms (1 connections now open to localhost:30002)
+2025-04-17T12:05:37.316+0000 I COMMAND  [conn23] command admin.$cmd command: update { update: "system.version", writeConcern: { w: "majority" }, $db: "admin" } numYields:0 reslen:245 locks:{ Global: { acquireCount: { r: 2, w: 2 } }, Database: { acquireCount: { w: 1, W: 1 } }, Collection: { acquireCount: { w: 1 } }, oplog: { acquireCount: { w: 1 } } } protocol:op_msg 20004ms
+2025-04-17T12:05:37.316+0000 I COMMAND  [conn23] obtaining UUIDs for pre-existing sharded collections from config server
+2025-04-17T12:05:37.317+0000 I COMMAND  [conn23] Assigning UUID 1982d8c8-ac54-446e-88eb-99c66cdd1bb7 to collection local.system.rollback.id
+2025-04-17T12:05:37.317+0000 I COMMAND  [conn23] Assigning UUID 4bcb69a6-4dfd-4e09-97e1-4aab23f651a1 to collection local.system.replset
+2025-04-17T12:05:37.317+0000 I COMMAND  [conn23] Assigning UUID 2940cbde-bbc2-4769-8bbf-34f10b2cd13f to collection local.me
+2025-04-17T12:05:37.317+0000 I COMMAND  [conn23] Assigning UUID c2ea348e-7332-4aec-a09f-5d0f0301fae6 to collection local.startup_log
+2025-04-17T12:05:37.317+0000 I COMMAND  [conn23] Assigning UUID 77916d3b-6c03-4bbc-984f-4f0264b1b698 to collection local.replset.minvalid
+2025-04-17T12:05:37.317+0000 I COMMAND  [conn23] Assigning UUID fc7d93b5-efcb-4d47-a041-3dd178aa3adc to collection local.oplog.rs
+2025-04-17T12:05:37.317+0000 I COMMAND  [conn23] Assigning UUID fcc905b4-3159-4a37-8b2a-d4bf1b3d250c to collection local.replset.election
+2025-04-17T12:05:37.317+0000 I COMMAND  [conn23] Assigning UUID dc1a9710-53ce-4ff2-8c30-05235a3165b3 to collection admin.system.version
+2025-04-17T12:05:37.317+0000 I COMMAND  [conn23] Assigning UUID c221d024-a058-4848-b1c3-c108c7f6a13d to collection config.transactions
+2025-04-17T12:05:37.317+0000 I COMMAND  [conn23] Finished updating UUID schema version for upgrade, waiting for all UUIDs to be committed.
+2025-04-17T12:05:37.345+0000 I COMMAND  [conn23] setting featureCompatibilityVersion to 3.6
+2025-04-17T12:05:37.345+0000 I NETWORK  [conn23] Skip closing connection for connection # 24
+2025-04-17T12:05:37.345+0000 I NETWORK  [conn23] Skip closing connection for connection # 23
+2025-04-17T12:05:37.345+0000 I NETWORK  [conn23] Skip closing connection for connection # 22
+2025-04-17T12:05:37.345+0000 I NETWORK  [conn23] Skip closing connection for connection # 20
+2025-04-17T12:05:37.345+0000 I NETWORK  [conn23] Skip closing connection for connection # 19
+2025-04-17T12:05:37.345+0000 I NETWORK  [conn23] Skip closing connection for connection # 17
+2025-04-17T12:05:37.345+0000 I NETWORK  [conn23] Skip closing connection for connection # 15
+2025-04-17T12:05:37.345+0000 I NETWORK  [conn23] Skip closing connection for connection # 10
+2025-04-17T12:05:37.345+0000 I NETWORK  [conn23] Skip closing connection for connection # 6
+2025-04-17T12:05:37.345+0000 I NETWORK  [conn23] Skip closing connection for connection # 2
+2025-04-17T12:05:57.325+0000 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Ending idle connection to host localhost:30000 because the pool meets constraints; 1 connections to that host remain open
+2025-04-17T12:05:57.327+0000 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Connecting to localhost:30001
+2025-04-17T12:05:57.327+0000 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Successfully connected to localhost:30001, took 0ms (1 connections now open to localhost:30001)
+2025-04-17T12:05:57.410+0000 I COMMAND  [conn23] command admin.$cmd command: update { update: "system.version", writeConcern: { w: "majority" }, $db: "admin" } numYields:0 reslen:370 locks:{ Global: { acquireCount: { r: 4, w: 2 } }, Database: { acquireCount: { r: 1, w: 1, W: 1 } }, Collection: { acquireCount: { r: 1, w: 1 } }, oplog: { acquireCount: { w: 1 } } } protocol:op_msg 20064ms
+2025-04-17T12:05:57.410+0000 I COMMAND  [conn23] command config.transactions command: setFeatureCompatibilityVersion { setFeatureCompatibilityVersion: "3.6", $db: "admin" } numYields:0 reslen:288 locks:{ Global: { acquireCount: { r: 37, w: 30, R: 1 } }, Database: { acquireCount: { r: 1, w: 4, W: 26 } }, Collection: { acquireCount: { r: 1, w: 2 } }, Mutex: { acquireCount: { W: 1 } }, oplog: { acquireCount: { w: 4 } } } protocol:op_msg 40098ms
+2025-04-17T12:05:57.410+0000 I NETWORK  [conn23] end connection 127.0.0.1:54618 (9 connections now open)
+2025-04-17T12:06:19.199+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:55080 #25 (10 connections now open)
+2025-04-17T12:06:19.199+0000 I NETWORK  [conn25] received client metadata from 127.0.0.1:55080 conn25: { driver: { name: "AddShard-TaskExecutor", version: "3.6.8" }, os: { type: "Linux", name: "Ubuntu", architecture: "x86_64", version: "20.04" } }
+2025-04-17T12:06:19.199+0000 I COMMAND  [conn25] CMD: drop config.system.sessions
+2025-04-17T12:06:19.227+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:55082 #26 (11 connections now open)
+2025-04-17T12:06:19.227+0000 I NETWORK  [conn26] received client metadata from 127.0.0.1:55082 conn26: { driver: { name: "MongoDB Internal Client", version: "3.6.8" }, os: { type: "Linux", name: "Ubuntu", architecture: "x86_64", version: "20.04" } }
+2025-04-17T12:06:22.329+0000 I NETWORK  [conn24] end connection 127.0.0.1:55874 (10 connections now open)
+2025-04-17T12:06:23.429+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:55096 #27 (11 connections now open)
+2025-04-17T12:06:23.429+0000 I NETWORK  [conn27] received client metadata from 127.0.0.1:55096 conn27: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.6.8" }, os: { type: "Linux", name: "Ubuntu", architecture: "x86_64", version: "20.04" } }
+2025-04-17T12:06:27.328+0000 I NETWORK  [shard registry reload] Starting new replica set monitor for shard-a/localhost:20000,localhost:20001,localhost:20002
+2025-04-17T12:06:27.328+0000 I NETWORK  [ReplicaSetMonitor-TaskExecutor-0] Successfully connected to localhost:20002 (1 connections now open to localhost:20002 with a 5 second timeout)
+2025-04-17T12:06:27.329+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:55106 #28 (12 connections now open)
+2025-04-17T12:06:27.329+0000 I NETWORK  [conn28] received client metadata from 127.0.0.1:55106 conn28: { driver: { name: "MongoDB Internal Client", version: "3.6.8" }, os: { type: "Linux", name: "Ubuntu", architecture: "x86_64", version: "20.04" } }
+2025-04-17T12:06:27.329+0000 I NETWORK  [ReplicaSetMonitor-TaskExecutor-0] Successfully connected to localhost:20000 (1 connections now open to localhost:20000 with a 5 second timeout)
+2025-04-17T12:06:27.330+0000 I NETWORK  [ReplicaSetMonitor-TaskExecutor-0] Successfully connected to localhost:20001 (1 connections now open to localhost:20001 with a 5 second timeout)
+2025-04-17T12:06:27.345+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:55112 #29 (13 connections now open)
+2025-04-17T12:06:27.346+0000 I NETWORK  [conn29] received client metadata from 127.0.0.1:55112 conn29: { driver: { name: "MongoDB Internal Client", version: "3.6.8" }, os: { type: "Linux", name: "Ubuntu", architecture: "x86_64", version: "20.04" } }
+2025-04-17T12:06:27.346+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:55118 #30 (14 connections now open)
+2025-04-17T12:06:27.346+0000 I NETWORK  [conn30] received client metadata from 127.0.0.1:55118 conn30: { driver: { name: "MongoDB Internal Client", version: "3.6.8" }, os: { type: "Linux", name: "Ubuntu", architecture: "x86_64", version: "20.04" } }
+2025-04-17T12:06:28.432+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:55124 #31 (15 connections now open)
+2025-04-17T12:06:28.432+0000 I NETWORK  [conn31] received client metadata from 127.0.0.1:55124 conn31: { driver: { name: "MongoDB Internal Client", version: "3.6.8" }, os: { type: "Linux", name: "Ubuntu", architecture: "x86_64", version: "20.04" } }
+2025-04-17T12:06:38.250+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:46358 #32 (16 connections now open)
+2025-04-17T12:06:38.250+0000 I NETWORK  [conn32] received client metadata from 127.0.0.1:46358 conn32: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.6.8" }, os: { type: "Linux", name: "Ubuntu", architecture: "x86_64", version: "20.04" } }
+2025-04-17T12:06:38.250+0000 I SH_REFR  [ConfigServerCatalogCacheLoader-0] Refresh for collection config.system.sessions took 0 ms and found the collection is not sharded
+2025-04-17T12:06:38.251+0000 I COMMAND  [ShardServerCatalogCacheLoader-0] CMD: drop config.cache.chunks.config.system.sessions
+2025-04-17T12:06:39.042+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:45860 #33 (17 connections now open)
+2025-04-17T12:06:39.042+0000 I NETWORK  [conn33] received client metadata from 127.0.0.1:45860 conn33: { driver: { name: "MongoDB Internal Client", version: "3.6.8" }, os: { type: "Linux", name: "Ubuntu", architecture: "x86_64", version: "20.04" } }
+2025-04-17T12:06:39.064+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:45866 #34 (18 connections now open)
+2025-04-17T12:06:39.064+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:45882 #35 (19 connections now open)
+2025-04-17T12:06:39.064+0000 I NETWORK  [conn34] received client metadata from 127.0.0.1:45866 conn34: { driver: { name: "MongoDB Internal Client", version: "3.6.8" }, os: { type: "Linux", name: "Ubuntu", architecture: "x86_64", version: "20.04" } }
+2025-04-17T12:06:39.065+0000 I NETWORK  [conn35] received client metadata from 127.0.0.1:45882 conn35: { driver: { name: "MongoDB Internal Client", version: "3.6.8" }, os: { type: "Linux", name: "Ubuntu", architecture: "x86_64", version: "20.04" } }
+2025-04-17T12:06:40.692+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:45896 #36 (20 connections now open)
+2025-04-17T12:06:40.692+0000 I NETWORK  [conn36] received client metadata from 127.0.0.1:45896 conn36: { driver: { name: "MongoDB Internal Client", version: "3.6.8" }, os: { type: "Linux", name: "Ubuntu", architecture: "x86_64", version: "20.04" } }
+2025-04-17T12:07:29.043+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:36112 #37 (21 connections now open)
+2025-04-17T12:07:29.043+0000 I NETWORK  [conn37] received client metadata from 127.0.0.1:36112 conn37: { driver: { name: "MongoDB Internal Client", version: "3.6.8" }, os: { type: "Linux", name: "Ubuntu", architecture: "x86_64", version: "20.04" } }
+2025-04-17T12:07:29.044+0000 I STORAGE  [conn27] createCollection: config.system.sessions with generated UUID: 78b3b0d0-2d1a-4aac-a08b-eb0d14ac129e
+2025-04-17T12:07:29.173+0000 I COMMAND  [conn27] command config.$cmd command: createIndexes { createIndexes: "system.sessions", indexes: [ { key: { _id: 1 }, name: "_id_1" } ], writeConcern: { w: "majority" }, $clusterTime: { clusterTime: Timestamp(1744891649, 3), signature: { hash: BinData(0, F3CC2F13E2DF278024BC01CA3BBDB62570CFC336), keyId: 7494250862416494618 } }, $configServerState: { opTime: { ts: Timestamp(1744891649, 3), t: 1 } }, $db: "config" } numYields:0 reslen:400 locks:{ Global: { acquireCount: { r: 3, w: 3 } }, Database: { acquireCount: { w: 3, W: 1 } }, Collection: { acquireCount: { w: 1 } }, oplog: { acquireCount: { w: 1 } } } protocol:op_msg 129ms
+2025-04-17T12:07:29.204+0000 I STORAGE  [ShardServerCatalogCacheLoader-1] createCollection: config.cache.collections with generated UUID: edaca4f6-ad52-487c-bd6f-f903b53186ea
+2025-04-17T12:07:29.204+0000 I SH_REFR  [ConfigServerCatalogCacheLoader-1] Refresh for collection config.system.sessions to version 1|0||6800ef014d3aefddab030af1 took 1 ms
+2025-04-17T12:07:29.217+0000 I STORAGE  [ShardServerCatalogCacheLoader-1] createCollection: config.cache.chunks.config.system.sessions with generated UUID: 35c61049-fb89-4d87-b51a-3dc61019b5ca
+2025-04-17T12:07:29.246+0000 I INDEX    [ShardServerCatalogCacheLoader-1] build index on: config.cache.chunks.config.system.sessions properties: { v: 2, key: { lastmod: 1 }, name: "lastmod_1", ns: "config.cache.chunks.config.system.sessions" }
+2025-04-17T12:07:29.246+0000 I INDEX    [ShardServerCatalogCacheLoader-1] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2025-04-17T12:07:29.246+0000 W STORAGE  [ShardServerCatalogCacheLoader-1] failed to create WiredTiger bulk cursor: Device or resource busy
+2025-04-17T12:07:29.246+0000 W STORAGE  [ShardServerCatalogCacheLoader-1] falling back to non-bulk cursor for index table:index-23--1976331000864961703
+2025-04-17T12:07:29.246+0000 I INDEX    [ShardServerCatalogCacheLoader-1] build index done.  scanned 0 total records. 0 secs
+2025-04-17T12:07:29.247+0000 I SHARDING [conn27] Marking collection config.system.sessions as sharded with collection version: 1|0||6800ef014d3aefddab030af1, shard version: 1|0||6800ef014d3aefddab030af1
+2025-04-17T12:07:29.269+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:36120 #38 (22 connections now open)
+2025-04-17T12:07:29.270+0000 I NETWORK  [conn38] received client metadata from 127.0.0.1:36120 conn38: { driver: { name: "NetworkInterfaceASIO-TaskExecutorPool-0", version: "3.6.8" }, os: { type: "Linux", name: "Ubuntu", architecture: "x86_64", version: "20.04" } }
+2025-04-17T12:07:31.842+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:36130 #39 (23 connections now open)
+2025-04-17T12:07:31.842+0000 I NETWORK  [conn39] received client metadata from 127.0.0.1:36130 conn39: { driver: { name: "NetworkInterfaceASIO-TaskExecutorPool-0", version: "3.6.8" }, os: { type: "Linux", name: "Ubuntu", architecture: "x86_64", version: "20.04" } }
+2025-04-17T12:07:57.329+0000 I NETWORK  [shard registry reload] Starting new replica set monitor for shard-b/localhost:20100,localhost:20101,localhost:20102
+2025-04-17T12:07:57.330+0000 I NETWORK  [ReplicaSetMonitor-TaskExecutor-0] Successfully connected to localhost:20100 (1 connections now open to localhost:20100 with a 5 second timeout)
+2025-04-17T12:07:57.331+0000 I NETWORK  [ReplicaSetMonitor-TaskExecutor-0] Successfully connected to localhost:20102 (1 connections now open to localhost:20102 with a 5 second timeout)
+2025-04-17T12:07:57.331+0000 I NETWORK  [ReplicaSetMonitor-TaskExecutor-0] Successfully connected to localhost:20101 (1 connections now open to localhost:20101 with a 5 second timeout)
+2025-04-17T12:07:58.442+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:58600 #40 (24 connections now open)
+2025-04-17T12:07:58.443+0000 I NETWORK  [conn40] received client metadata from 127.0.0.1:58600 conn40: { driver: { name: "NetworkInterfaceASIO-TaskExecutorPool-0", version: "3.6.8" }, os: { type: "Linux", name: "Ubuntu", architecture: "x86_64", version: "20.04" } }
+2025-04-17T12:07:58.450+0000 I INDEX    [conn40] build index on: config.system.sessions properties: { v: 2, key: { lastUse: 1 }, name: "lsidTTLIndex", ns: "config.system.sessions", expireAfterSeconds: 1800 }
+2025-04-17T12:07:58.450+0000 I INDEX    [conn40] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2025-04-17T12:07:58.452+0000 I INDEX    [conn40] build index done.  scanned 1 total records. 0 secs
+2025-04-17T12:08:10.702+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:54432 #41 (25 connections now open)
+2025-04-17T12:08:10.702+0000 I NETWORK  [conn41] received client metadata from 127.0.0.1:54432 conn41: { driver: { name: "NetworkInterfaceASIO-TaskExecutorPool-0", version: "3.6.8" }, os: { type: "Linux", name: "Ubuntu", architecture: "x86_64", version: "20.04" } }
+2025-04-17T12:08:57.919+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:40182 #42 (26 connections now open)
+2025-04-17T12:08:57.919+0000 I NETWORK  [conn42] received client metadata from 127.0.0.1:40182 conn42: { driver: { name: "NetworkInterfaceASIO-TaskExecutorPool-2", version: "3.6.8" }, os: { type: "Linux", name: "Ubuntu", architecture: "x86_64", version: "20.04" } }
+2025-04-17T12:08:58.043+0000 I COMMAND  [conn42] command config.$cmd command: update { update: "system.sessions", bypassDocumentValidation: false, ordered: false, updates: [ { q: { _id: { id: UUID("ab9fd326-9aac-4b02-85a1-8684db203da3"), uid: BinData(0, E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855) } }, u: { $currentDate: { lastUse: true } }, multi: false, upsert: true } ], shardVersion: [ Timestamp(1, 0), ObjectId('6800ef014d3aefddab030af1') ], writeConcern: { w: "majority", wtimeout: 15000 }, $clusterTime: { clusterTime: Timestamp(1744891737, 4), signature: { hash: BinData(0, AC800C0D4AB6973CCBF6D55DDC71BFF859E2FCAD), keyId: 7494250862416494618 } }, $configServerState: { opTime: { ts: Timestamp(1744891737, 4), t: 1 } }, $db: "config" } numYields:0 reslen:370 locks:{ Global: { acquireCount: { r: 2, w: 2 } }, Database: { acquireCount: { w: 2 } }, Collection: { acquireCount: { w: 1 } }, oplog: { acquireCount: { w: 1 } } } protocol:op_msg 123ms
+2025-04-17T12:10:22.417+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:59536 #43 (27 connections now open)
+2025-04-17T12:10:22.417+0000 I NETWORK  [conn43] received client metadata from 127.0.0.1:59536 conn43: { driver: { name: "NetworkInterfaceASIO-RS", version: "3.6.8" }, os: { type: "Linux", name: "Ubuntu", architecture: "x86_64", version: "20.04" } }
+2025-04-17T12:10:23.914+0000 I ASIO     [NetworkInterfaceASIO-TaskExecutorPool-0-0] Connecting to localhost:20000
+2025-04-17T12:10:23.915+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:59550 #44 (28 connections now open)
+2025-04-17T12:10:23.915+0000 I NETWORK  [conn44] received client metadata from 127.0.0.1:59550 conn44: { driver: { name: "NetworkInterfaceASIO-TaskExecutorPool-0", version: "3.6.8" }, os: { type: "Linux", name: "Ubuntu", architecture: "x86_64", version: "20.04" } }
+2025-04-17T12:10:23.915+0000 I ASIO     [NetworkInterfaceASIO-TaskExecutorPool-0-0] Successfully connected to localhost:20000, took 1ms (1 connections now open to localhost:20000)
+2025-04-17T12:10:24.037+0000 I COMMAND  [conn44] command config.$cmd command: update { update: "system.sessions", bypassDocumentValidation: false, ordered: false, updates: [ { q: { _id: { id: UUID("ab9fd326-9aac-4b02-85a1-8684db203da3"), uid: BinData(0, E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855) } }, u: { $currentDate: { lastUse: true } }, multi: false, upsert: true } ], shardVersion: [ Timestamp(1, 0), ObjectId('6800ef014d3aefddab030af1') ], writeConcern: { w: "majority", wtimeout: 15000 }, $clusterTime: { clusterTime: Timestamp(1744891823, 1), signature: { hash: BinData(0, 9013B65B796B80A1BF9D976FE068DE56AE191C17), keyId: 7494250862416494618 } }, $configServerState: { opTime: { ts: Timestamp(1744891823, 1), t: 1 } }, $db: "config" } numYields:0 reslen:370 locks:{ Global: { acquireCount: { r: 2, w: 2 } }, Database: { acquireCount: { w: 2 } }, Collection: { acquireCount: { w: 1 } }, oplog: { acquireCount: { w: 1 } } } protocol:op_msg 121ms
+2025-04-17T12:11:10.472+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:40784 #45 (29 connections now open)
+2025-04-17T12:11:10.472+0000 I NETWORK  [conn45] received client metadata from 127.0.0.1:40784 conn45: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.6.8" }, os: { type: "Linux", name: "Ubuntu", architecture: "x86_64", version: "20.04" } }
+2025-04-17T12:11:19.201+0000 I NETWORK  [conn25] end connection 127.0.0.1:55080 (28 connections now open)
+2025-04-17T12:11:22.417+0000 I NETWORK  [conn17] end connection 127.0.0.1:53158 (27 connections now open)
+2025-04-17T12:12:22.420+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:41160 #46 (28 connections now open)
+2025-04-17T12:12:22.421+0000 I NETWORK  [conn46] received client metadata from 127.0.0.1:41160 conn46: { driver: { name: "NetworkInterfaceASIO-RS", version: "3.6.8" }, os: { type: "Linux", name: "Ubuntu", architecture: "x86_64", version: "20.04" } }
+2025-04-17T12:12:23.434+0000 I COMMAND  [conn38] command config.$cmd command: update { update: "system.sessions", bypassDocumentValidation: false, ordered: false, updates: [ { q: { _id: { id: UUID("ab9fd326-9aac-4b02-85a1-8684db203da3"), uid: BinData(0, E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855) } }, u: { $currentDate: { lastUse: true } }, multi: false, upsert: true } ], shardVersion: [ Timestamp(1, 0), ObjectId('6800ef014d3aefddab030af1') ], writeConcern: { w: "majority", wtimeout: 15000 }, $clusterTime: { clusterTime: Timestamp(1744891938, 1), signature: { hash: BinData(0, 06EB5A3F4537023FB079F7E8C7101B9A1268765C), keyId: 7494250862416494618 } }, $configServerState: { opTime: { ts: Timestamp(1744891938, 1), t: 1 } }, $db: "config" } numYields:0 reslen:370 locks:{ Global: { acquireCount: { r: 2, w: 2 } }, Database: { acquireCount: { w: 2 } }, Collection: { acquireCount: { w: 1 } }, oplog: { acquireCount: { w: 1 } } } protocol:op_msg 122ms
+2025-04-17T12:12:31.962+0000 I COMMAND  [conn39] command config.$cmd command: update { update: "system.sessions", bypassDocumentValidation: false, ordered: false, updates: [ { q: { _id: { id: UUID("ab9fd326-9aac-4b02-85a1-8684db203da3"), uid: BinData(0, E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855) } }, u: { $currentDate: { lastUse: true } }, multi: false, upsert: true } ], shardVersion: [ Timestamp(1, 0), ObjectId('6800ef014d3aefddab030af1') ], writeConcern: { w: "majority", wtimeout: 15000 }, $clusterTime: { clusterTime: Timestamp(1744891949, 1), signature: { hash: BinData(0, D4E87D9EA4751D406DBEFA3905B69C8BFB4BECDC), keyId: 7494250862416494618 } }, $configServerState: { opTime: { ts: Timestamp(1744891948, 1), t: 1 } }, $db: "config" } numYields:0 reslen:370 locks:{ Global: { acquireCount: { r: 2, w: 2 } }, Database: { acquireCount: { w: 2 } }, Collection: { acquireCount: { w: 1 } }, oplog: { acquireCount: { w: 1 } } } protocol:op_msg 120ms
+2025-04-17T12:12:58.453+0000 I NETWORK  [conn40] end connection 127.0.0.1:58600 (27 connections now open)
+2025-04-17T12:13:02.419+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:54668 #47 (28 connections now open)
+2025-04-17T12:13:02.419+0000 I NETWORK  [conn47] received client metadata from 127.0.0.1:54668 conn47: { driver: { name: "NetworkInterfaceASIO-RS", version: "3.6.8" }, os: { type: "Linux", name: "Ubuntu", architecture: "x86_64", version: "20.04" } }
+2025-04-17T12:13:10.702+0000 I NETWORK  [conn41] end connection 127.0.0.1:54432 (27 connections now open)
+2025-04-17T12:13:22.420+0000 I NETWORK  [conn10] end connection 127.0.0.1:37090 (26 connections now open)
+2025-04-17T12:13:57.919+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:48022 #48 (27 connections now open)
+2025-04-17T12:13:57.919+0000 I NETWORK  [conn48] received client metadata from 127.0.0.1:48022 conn48: { driver: { name: "NetworkInterfaceASIO-TaskExecutorPool-1", version: "3.6.8" }, os: { type: "Linux", name: "Ubuntu", architecture: "x86_64", version: "20.04" } }
+2025-04-17T12:13:58.040+0000 I COMMAND  [conn48] command config.$cmd command: update { update: "system.sessions", bypassDocumentValidation: false, ordered: false, updates: [ { q: { _id: { id: UUID("ab9fd326-9aac-4b02-85a1-8684db203da3"), uid: BinData(0, E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855) } }, u: { $currentDate: { lastUse: true } }, multi: false, upsert: true } ], shardVersion: [ Timestamp(1, 0), ObjectId('6800ef014d3aefddab030af1') ], writeConcern: { w: "majority", wtimeout: 15000 }, $clusterTime: { clusterTime: Timestamp(1744892037, 4), signature: { hash: BinData(0, 84D58827BD1B3E4D54EBE07CF9730F844A9CAB41), keyId: 7494250862416494618 } }, $configServerState: { opTime: { ts: Timestamp(1744892037, 4), t: 1 } }, $db: "config" } numYields:0 reslen:370 locks:{ Global: { acquireCount: { r: 2, w: 2 } }, Database: { acquireCount: { w: 2 } }, Collection: { acquireCount: { w: 1 } }, oplog: { acquireCount: { w: 1 } } } protocol:op_msg 121ms
+2025-04-17T12:13:58.043+0000 I NETWORK  [conn42] end connection 127.0.0.1:40182 (26 connections now open)
+2025-04-17T12:14:32.431+0000 I NETWORK  [conn43] end connection 127.0.0.1:59536 (25 connections now open)
+2025-04-17T12:15:01.291+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:35262 #49 (26 connections now open)
+2025-04-17T12:15:01.292+0000 I NETWORK  [conn49] received client metadata from 127.0.0.1:35262 conn49: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.6.8" }, os: { type: "Linux", name: "Ubuntu", architecture: "x86_64", version: "20.04" } }
+2025-04-17T12:15:01.293+0000 I SH_REFR  [ConfigServerCatalogCacheLoader-4] Refresh for collection kt.mycollect to version 1|1||6800f0c54d3aefddab0317a1 took 0 ms
+2025-04-17T12:15:01.293+0000 I SHARDING [conn49] Marking collection kt.mycollect as sharded with collection version: 1|1||6800f0c54d3aefddab0317a1, shard version: 0|0||6800f0c54d3aefddab0317a1
+2025-04-17T12:15:01.293+0000 I STORAGE  [ShardServerCatalogCacheLoader-4] createCollection: config.cache.chunks.kt.mycollect with generated UUID: 4623ff6d-ff9a-453c-8234-6e7a2d96b020
+2025-04-17T12:15:01.294+0000 I SHARDING [migrateThread] Starting receiving end of migration of chunk { _id: MinKey } -> { _id: 0 } for collection kt.mycollect from shard-b/localhost:20100,localhost:20101,localhost:20102 at epoch 6800f0c54d3aefddab0317a1 with session id shard-b_shard-a_6800f0c5d60acc727b8bab5e
+2025-04-17T12:15:01.294+0000 I NETWORK  [migrateThread] Successfully connected to shard-b/localhost:20100,localhost:20101,localhost:20102 (1 connections now open to shard-b/localhost:20100,localhost:20101,localhost:20102 with a 0 second timeout)
+2025-04-17T12:15:01.296+0000 I STORAGE  [migrateThread] createCollection: kt.mycollect with provided UUID: 57c94af9-df34-44f4-acbd-e041b09a9bd9
+2025-04-17T12:15:01.318+0000 I INDEX    [ShardServerCatalogCacheLoader-4] build index on: config.cache.chunks.kt.mycollect properties: { v: 2, key: { lastmod: 1 }, name: "lastmod_1", ns: "config.cache.chunks.kt.mycollect" }
+2025-04-17T12:15:01.318+0000 I INDEX    [ShardServerCatalogCacheLoader-4] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2025-04-17T12:15:01.324+0000 I INDEX    [ShardServerCatalogCacheLoader-4] build index done.  scanned 0 total records. 0 secs
+2025-04-17T12:15:01.331+0000 I INDEX    [migrateThread] build index on: kt.mycollect properties: { v: 2, key: { _id: "hashed" }, name: "_id_hashed", ns: "kt.mycollect" }
+2025-04-17T12:15:01.331+0000 I INDEX    [migrateThread] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2025-04-17T12:15:01.331+0000 I SHARDING [migrateThread] Scheduling deletion of any documents in kt.mycollect range [{ _id: MinKey }, { _id: 0 }) before migrating in a chunk covering the range
+2025-04-17T12:15:01.331+0000 I SHARDING [Collection Range Deleter] No documents remain to delete in kt.mycollect range [{ _id: MinKey }, { _id: 0 })
+2025-04-17T12:15:01.331+0000 I SHARDING [Collection Range Deleter] Waiting for majority replication of local deletions in kt.mycollect range [{ _id: MinKey }, { _id: 0 })
+2025-04-17T12:15:01.419+0000 I SHARDING [Collection Range Deleter] Finished deleting documents in kt.mycollect range [{ _id: MinKey }, { _id: 0 })
+2025-04-17T12:15:01.419+0000 I SHARDING [migrateThread] Finished deleting kt.mycollect range [{ _id: MinKey }, { _id: 0 })
+2025-04-17T12:15:01.420+0000 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Connecting to localhost:20100
+2025-04-17T12:15:01.421+0000 I SHARDING [migrateThread] Waiting for replication to catch up before entering critical section
+2025-04-17T12:15:01.422+0000 I SHARDING [migrateThread] migrate commit succeeded flushing to secondaries for 'kt.mycollect' { _id: MinKey } -> { _id: 0 }
+2025-04-17T12:15:01.422+0000 I COMMAND  [conn49] command admin.$cmd command: _recvChunkStatus { _recvChunkStatus: "kt.mycollect", waitForSteadyOrDone: true, sessionId: "shard-b_shard-a_6800f0c5d60acc727b8bab5e", $clusterTime: { clusterTime: Timestamp(1744892101, 21), signature: { hash: BinData(0, CC025310B66CB6CE2D42C72398E45D60EFE6BC16), keyId: 7494250862416494618 } }, $configServerState: { opTime: { ts: Timestamp(1744892101, 18), t: 1 } }, $db: "admin" } numYields:0 reslen:626 locks:{} protocol:op_msg 126ms
+2025-04-17T12:15:01.423+0000 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Successfully connected to localhost:20100, took 3ms (1 connections now open to localhost:20100)
+2025-04-17T12:15:01.545+0000 I SHARDING [migrateThread] migrate commit succeeded flushing to secondaries for 'kt.mycollect' { _id: MinKey } -> { _id: 0 }
+2025-04-17T12:15:01.832+0000 I SHARDING [migrateThread] about to log metadata event into changelog: { _id: "codespaces-c69bba-2025-04-17T12:15:01.832+0000-6800f0c517ce6756068d0286", server: "codespaces-c69bba", clientAddr: "", time: new Date(1744892101832), what: "moveChunk.to", ns: "kt.mycollect", details: { min: { _id: MinKey }, max: { _id: 0 }, step 1 of 6: 36, step 2 of 6: 88, step 3 of 6: 1, step 4 of 6: 0, step 5 of 6: 124, step 6 of 6: 287, note: "success" } }
+2025-04-17T12:15:01.836+0000 I COMMAND  [conn49] command admin.$cmd command: _recvChunkCommit { _recvChunkCommit: "kt.mycollect", waitForSteadyOrDone: false, sessionId: "shard-b_shard-a_6800f0c5d60acc727b8bab5e", $clusterTime: { clusterTime: Timestamp(1744892101, 32), signature: { hash: BinData(0, CC025310B66CB6CE2D42C72398E45D60EFE6BC16), keyId: 7494250862416494618 } }, $configServerState: { opTime: { ts: Timestamp(1744892101, 18), t: 1 } }, $db: "admin" } numYields:0 reslen:559 locks:{} protocol:op_msg 293ms
+2025-04-17T12:15:01.978+0000 I SHARDING [conn27] received splitChunk request: { splitChunk: "kt.mycollect", from: "shard-a", keyPattern: { _id: "hashed" }, epoch: ObjectId('6800f0c54d3aefddab0317a1'), shardVersion: [ Timestamp(2, 1), ObjectId('6800f0c54d3aefddab0317a1') ], min: { _id: MinKey }, max: { _id: 0 }, splitKeys: [ { _id: -4611686018427387902 } ], lsid: { id: UUID("ab9fd326-9aac-4b02-85a1-8684db203da3"), uid: BinData(0, E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855) }, $clusterTime: { clusterTime: Timestamp(1744892101, 45), signature: { hash: BinData(0, CC025310B66CB6CE2D42C72398E45D60EFE6BC16), keyId: 7494250862416494618 } }, $client: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "3.6.8" }, os: { type: "Linux", name: "Ubuntu", architecture: "x86_64", version: "20.04" }, mongos: { host: "codespaces-c69bba:50000", client: "127.0.0.1:33722", version: "3.6.8" } }, $configServerState: { opTime: { ts: Timestamp(1744892101, 45), t: 1 } }, $db: "admin" }
+2025-04-17T12:15:01.981+0000 I SHARDING [conn27] distributed lock 'kt.mycollect' acquired for 'splitting chunk [{ _id: MinKey }, { _id: 0 }) in kt.mycollect', ts : 6800f0c517ce6756068d0289
+2025-04-17T12:15:01.995+0000 I SHARDING [conn27] distributed lock with ts: 6800f0c517ce6756068d0289' unlocked.
+2025-04-17T12:15:24.032+0000 I COMMAND  [conn44] command config.$cmd command: update { update: "system.sessions", bypassDocumentValidation: false, ordered: false, updates: [ { q: { _id: { id: UUID("ab9fd326-9aac-4b02-85a1-8684db203da3"), uid: BinData(0, E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855) } }, u: { $currentDate: { lastUse: true } }, multi: false, upsert: true } ], shardVersion: [ Timestamp(1, 0), ObjectId('6800ef014d3aefddab030af1') ], writeConcern: { w: "majority", wtimeout: 15000 }, $clusterTime: { clusterTime: Timestamp(1744892123, 1), signature: { hash: BinData(0, 7102A3702A933569186E211AA8494FF345974077), keyId: 7494250862416494618 } }, $configServerState: { opTime: { ts: Timestamp(1744892123, 1), t: 1 } }, $db: "config" } numYields:0 reslen:370 locks:{ Global: { acquireCount: { r: 2, w: 2 } }, Database: { acquireCount: { w: 2 } }, Collection: { acquireCount: { w: 1 } }, oplog: { acquireCount: { w: 1 } } } protocol:op_msg 117ms
+2025-04-17T12:17:17.445+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:59472 #50 (27 connections now open)
+2025-04-17T12:17:17.446+0000 I NETWORK  [conn50] received client metadata from 127.0.0.1:59472 conn50: { driver: { name: "NetworkInterfaceASIO-RS", version: "3.6.8" }, os: { type: "Linux", name: "Ubuntu", architecture: "x86_64", version: "20.04" } }
+2025-04-17T12:17:23.437+0000 I COMMAND  [conn38] command config.$cmd command: update { update: "system.sessions", bypassDocumentValidation: false, ordered: false, updates: [ { q: { _id: { id: UUID("ab9fd326-9aac-4b02-85a1-8684db203da3"), uid: BinData(0, E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855) } }, u: { $currentDate: { lastUse: true } }, multi: false, upsert: true } ], shardVersion: [ Timestamp(1, 0), ObjectId('6800ef014d3aefddab030af1') ], writeConcern: { w: "majority", wtimeout: 15000 }, $clusterTime: { clusterTime: Timestamp(1744892243, 99), signature: { hash: BinData(0, 4FD0BD7AC3F0EF425305A7FED791657D017CAD51), keyId: 7494250862416494618 } }, $configServerState: { opTime: { ts: Timestamp(1744892243, 98), t: 1 } }, $db: "config" } numYields:0 reslen:370 locks:{ Global: { acquireCount: { r: 2, w: 2 } }, Database: { acquireCount: { w: 2 } }, Collection: { acquireCount: { w: 1 } }, oplog: { acquireCount: { w: 1 } } } protocol:op_msg 124ms
+2025-04-17T12:17:31.963+0000 I COMMAND  [conn39] command config.$cmd command: update { update: "system.sessions", bypassDocumentValidation: false, ordered: false, updates: [ { q: { _id: { id: UUID("ab9fd326-9aac-4b02-85a1-8684db203da3"), uid: BinData(0, E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855) } }, u: { $currentDate: { lastUse: true } }, multi: false, upsert: true } ], shardVersion: [ Timestamp(1, 0), ObjectId('6800ef014d3aefddab030af1') ], writeConcern: { w: "majority", wtimeout: 15000 }, $clusterTime: { clusterTime: Timestamp(1744892249, 1), signature: { hash: BinData(0, FF9598611F261D271AC0712A150CCECDD783050B), keyId: 7494250862416494618 } }, $configServerState: { opTime: { ts: Timestamp(1744892248, 1), t: 1 } }, $db: "config" } numYields:0 reslen:370 locks:{ Global: { acquireCount: { r: 2, w: 2 } }, Database: { acquireCount: { w: 2 } }, Collection: { acquireCount: { w: 1 } }, oplog: { acquireCount: { w: 1 } } } protocol:op_msg 122ms
+2025-04-17T12:18:17.445+0000 I NETWORK  [conn19] end connection 127.0.0.1:46730 (26 connections now open)
+2025-04-17T12:18:58.038+0000 I COMMAND  [conn48] command config.$cmd command: update { update: "system.sessions", bypassDocumentValidation: false, ordered: false, updates: [ { q: { _id: { id: UUID("ab9fd326-9aac-4b02-85a1-8684db203da3"), uid: BinData(0, E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855) } }, u: { $currentDate: { lastUse: true } }, multi: false, upsert: true } ], shardVersion: [ Timestamp(1, 0), ObjectId('6800ef014d3aefddab030af1') ], writeConcern: { w: "majority", wtimeout: 15000 }, $clusterTime: { clusterTime: Timestamp(1744892337, 4), signature: { hash: BinData(0, 5F3288C3DBCE5256EBB8526934AF90B006021CAC), keyId: 7494250862416494618 } }, $configServerState: { opTime: { ts: Timestamp(1744892337, 4), t: 1 } }, $db: "config" } numYields:0 reslen:370 locks:{ Global: { acquireCount: { r: 2, w: 2 } }, Database: { acquireCount: { w: 2 } }, Collection: { acquireCount: { w: 1 } }, oplog: { acquireCount: { w: 1 } } } protocol:op_msg 120ms
+2025-04-17T12:18:58.039+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:52886 #51 (27 connections now open)
+2025-04-17T12:18:58.039+0000 I NETWORK  [conn51] received client metadata from 127.0.0.1:52886 conn51: { driver: { name: "NetworkInterfaceASIO-TaskExecutorPool-2", version: "3.6.8" }, os: { type: "Linux", name: "Ubuntu", architecture: "x86_64", version: "20.04" } }
+2025-04-17T12:20:01.848+0000 I NETWORK  [conn49] end connection 127.0.0.1:35262 (26 connections now open)
+2025-04-17T12:20:24.032+0000 I NETWORK  [conn44] end connection 127.0.0.1:59550 (25 connections now open)
+2025-04-17T12:22:23.433+0000 I COMMAND  [conn38] command config.$cmd command: update { update: "system.sessions", bypassDocumentValidation: false, ordered: false, updates: [ { q: { _id: { id: UUID("ab9fd326-9aac-4b02-85a1-8684db203da3"), uid: BinData(0, E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855) } }, u: { $currentDate: { lastUse: true } }, multi: false, upsert: true } ], shardVersion: [ Timestamp(1, 0), ObjectId('6800ef014d3aefddab030af1') ], writeConcern: { w: "majority", wtimeout: 15000 }, $clusterTime: { clusterTime: Timestamp(1744892538, 1), signature: { hash: BinData(0, 12F16734C4BC431036E1FE1C4F76AA853D864081), keyId: 7494250862416494618 } }, $configServerState: { opTime: { ts: Timestamp(1744892538, 1), t: 1 } }, $db: "config" } numYields:0 reslen:370 locks:{ Global: { acquireCount: { r: 2, w: 2 } }, Database: { acquireCount: { w: 2 } }, Collection: { acquireCount: { w: 1 } }, oplog: { acquireCount: { w: 1 } } } protocol:op_msg 121ms
+2025-04-17T12:22:31.964+0000 I NETWORK  [conn39] end connection 127.0.0.1:36130 (24 connections now open)
+2025-04-17T12:23:58.038+0000 I COMMAND  [conn51] command config.$cmd command: update { update: "system.sessions", bypassDocumentValidation: false, ordered: false, updates: [ { q: { _id: { id: UUID("ab9fd326-9aac-4b02-85a1-8684db203da3"), uid: BinData(0, E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855) } }, u: { $currentDate: { lastUse: true } }, multi: false, upsert: true } ], shardVersion: [ Timestamp(1, 0), ObjectId('6800ef014d3aefddab030af1') ], writeConcern: { w: "majority", wtimeout: 15000 }, $clusterTime: { clusterTime: Timestamp(1744892637, 4), signature: { hash: BinData(0, E80B32499462F93A6C6416ED85D39C20ABBF3235), keyId: 7494250862416494618 } }, $configServerState: { opTime: { ts: Timestamp(1744892637, 4), t: 1 } }, $db: "config" } numYields:0 reslen:370 locks:{ Global: { acquireCount: { r: 2, w: 2 } }, Database: { acquireCount: { w: 2 } }, Collection: { acquireCount: { w: 1 } }, oplog: { acquireCount: { w: 1 } } } protocol:op_msg 120ms
+2025-04-17T12:23:58.038+0000 I NETWORK  [conn48] end connection 127.0.0.1:48022 (23 connections now open)
+2025-04-17T12:23:58.039+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:44162 #52 (24 connections now open)
+2025-04-17T12:23:58.039+0000 I NETWORK  [conn52] received client metadata from 127.0.0.1:44162 conn52: { driver: { name: "NetworkInterfaceASIO-TaskExecutorPool-3", version: "3.6.8" }, os: { type: "Linux", name: "Ubuntu", architecture: "x86_64", version: "20.04" } }
+2025-04-17T12:26:32.435+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:37110 #53 (25 connections now open)
+2025-04-17T12:26:32.435+0000 I NETWORK  [conn53] received client metadata from 127.0.0.1:37110 conn53: { driver: { name: "NetworkInterfaceASIO-RS", version: "3.6.8" }, os: { type: "Linux", name: "Ubuntu", architecture: "x86_64", version: "20.04" } }
+2025-04-17T12:28:22.436+0000 I NETWORK  [conn46] end connection 127.0.0.1:41160 (24 connections now open)
+2025-04-17T12:28:32.440+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:50160 #54 (25 connections now open)
+2025-04-17T12:28:32.440+0000 I NETWORK  [conn54] received client metadata from 127.0.0.1:50160 conn54: { driver: { name: "NetworkInterfaceASIO-RS", version: "3.6.8" }, os: { type: "Linux", name: "Ubuntu", architecture: "x86_64", version: "20.04" } }
+2025-04-17T12:28:58.038+0000 I NETWORK  [conn51] end connection 127.0.0.1:52886 (24 connections now open)
+2025-04-17T12:28:58.040+0000 I NETWORK  [conn52] end connection 127.0.0.1:44162 (23 connections now open)
+2025-04-17T12:29:32.439+0000 I NETWORK  [conn20] end connection 127.0.0.1:35922 (22 connections now open)
+2025-04-17T12:31:32.444+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:53654 #55 (23 connections now open)
+2025-04-17T12:31:32.444+0000 I NETWORK  [conn55] received client metadata from 127.0.0.1:53654 conn55: { driver: { name: "NetworkInterfaceASIO-RS", version: "3.6.8" }, os: { type: "Linux", name: "Ubuntu", architecture: "x86_64", version: "20.04" } }
+2025-04-17T12:32:23.312+0000 I NETWORK  [conn38] end connection 127.0.0.1:36120 (22 connections now open)
+2025-04-17T12:32:32.444+0000 I NETWORK  [conn54] end connection 127.0.0.1:50160 (21 connections now open)
+2025-04-17T12:37:12.451+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:47800 #56 (22 connections now open)
+2025-04-17T12:37:12.451+0000 I NETWORK  [conn56] received client metadata from 127.0.0.1:47800 conn56: { driver: { name: "NetworkInterfaceASIO-RS", version: "3.6.8" }, os: { type: "Linux", name: "Ubuntu", architecture: "x86_64", version: "20.04" } }
+2025-04-17T12:38:12.451+0000 I NETWORK  [conn47] end connection 127.0.0.1:54668 (21 connections now open)
+2025-04-17T12:39:42.457+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:55270 #57 (22 connections now open)
+2025-04-17T12:39:42.457+0000 I NETWORK  [conn57] received client metadata from 127.0.0.1:55270 conn57: { driver: { name: "NetworkInterfaceASIO-RS", version: "3.6.8" }, os: { type: "Linux", name: "Ubuntu", architecture: "x86_64", version: "20.04" } }
+2025-04-17T12:41:22.455+0000 I NETWORK  [conn53] end connection 127.0.0.1:37110 (21 connections now open)
+2025-04-17T12:47:22.464+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:35774 #58 (22 connections now open)
+2025-04-17T12:47:22.464+0000 I NETWORK  [conn58] received client metadata from 127.0.0.1:35774 conn58: { driver: { name: "NetworkInterfaceASIO-RS", version: "3.6.8" }, os: { type: "Linux", name: "Ubuntu", architecture: "x86_64", version: "20.04" } }
+2025-04-17T12:48:22.463+0000 I NETWORK  [conn55] end connection 127.0.0.1:53654 (21 connections now open)
